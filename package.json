@@ -18,7 +18,7 @@
     "predocs": "rimraf docs",
     "docs": "typedoc --out docs --exclude '**/__mocks__/**' --excludeExternals --target es6 --includeDeclarations --excludePrivate --mode library src/index.ts",
     "docs:watch": "watch 'yarn docs' ./src",
-    "build": "tsdx build",
+    "build": "tsdx build --format umd,esm,cjs",
     "test": "tsdx test",
     "lint": "tsdx lint",
     "prepare": "tsdx build"
