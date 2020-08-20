@@ -1,0 +1,45 @@
+{
+  "version": "0.1.0",
+  "name": "openweathermap-onecall",
+  "author": "Jordon de Hoog",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/openweathermap-onecall.esm.js",
+  "typings": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "predocs": "rimraf docs",
+    "docs": "typedoc --out docs --exclude '**/__mocks__/**' --excludeExternals --target es6 --includeDeclarations --excludePrivate --mode library src/index.ts",
+    "docs:watch": "watch 'yarn docs' ./src",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": false,
+    "trailingComma": "es5"
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "rimraf": "^3.0.2",
+    "tsdx": "^0.13.2",
+    "tslib": "^2.0.1",
+    "typedoc": "^0.17.0-3",
+    "typescript": "^3.9.7"
+  }
+}
