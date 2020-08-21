@@ -4,7 +4,7 @@ export {
   DarkSkyHourlyDataBlock,
   DarkSkyHourlyDataPoint,
 } from "./darksky-hourly"
-export * from "./darksky-icons"
+export { DarkSkyWeatherIcon } from "./darksky-icons"
 export {
   DarkSkyMinutelyDataBlock,
   DarkSkyMinutelyDataPoint,

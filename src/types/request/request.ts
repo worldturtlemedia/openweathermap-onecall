@@ -17,13 +17,6 @@ export interface OneCallRequest {
    * The longitude of a location (in decimal degrees). Positive is east, negative is west.
    */
   lon: number | string
-
-  /**
-   * API key to access the OpenWeatherMap API.
-   *
-   * Obtained from {@link https://openweathermap.org/api | OpenWeatherMap API}.
-   */
-  appid: string
 }
 
 /**

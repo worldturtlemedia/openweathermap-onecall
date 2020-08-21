@@ -16,13 +16,13 @@
   "scripts": {
     "start": "tsdx watch",
     "predocs": "rimraf docs",
-    "docs": "typedoc --out docs --exclude '**/__mocks__/**' --excludeExternals --target es6 --includeDeclarations --excludePrivate --mode library src/index.ts",
-    "docs:watch": "watch 'yarn docs' ./src",
+    "docs": "typedoc --out docs --exclude '**/__mocks__/**' --excludeExternals --stripInternal --target es6 --includeDeclarations --excludePrivate --mode library src/index.ts",
     "build": "tsdx build --format umd,esm,cjs",
     "test": "tsdx test",
     "test:watch": "tsdx test --watch",
     "test:coverage": "tsdx test --coverage",
     "lint": "tsdx lint",
+    "lint:fix": "tsdx lint --fix",
     "prepare": "tsdx build"
   },
   "peerDependencies": {},
@@ -43,7 +43,7 @@
     "husky": "4.2.5",
     "rimraf": "3.0.2",
     "tsdx": "0.13.2",
-    "tslib": "2.0.1",
+    "tslib": "^2.0.1",
     "typedoc": "0.17.0-3",
     "typescript": "4.0.2"
   },
@@ -51,5 +51,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "axios": "^0.20.0"
   }
 }

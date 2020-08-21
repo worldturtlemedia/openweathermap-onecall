@@ -7,7 +7,7 @@ export interface WeatherBlock {
   /**
    * Weather condition id.
    *
-   * See {@link https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2 | Weather Condition Codes} for more info.
+   * See {@link https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2 Weather Condition Codes} for more info.
    */
   id: number
 

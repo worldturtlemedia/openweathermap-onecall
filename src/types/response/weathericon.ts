@@ -1,7 +1,7 @@
 /**
  * All of the supported icons for each weather condition.
  *
- * See {@link https://openweathermap.org/weather-conditions | Weather Conditions} for more information.
+ * See {@link https://openweathermap.org/weather-conditions Weather Conditions} for more information.
  */
 export enum WeatherIcon {
   ClearSky = "01d",

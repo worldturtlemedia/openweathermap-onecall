@@ -10,7 +10,7 @@ import { Forecast } from "../types"
 /**
  * DarkSky Forecast response types.
  *
- * See {@link https://darksky.net/dev/docs#response-format | DarkSky API Docs} for more.
+ * See {@link https://darksky.net/dev/docs#response-format DarkSky API Docs} for more.
  *
  * Missing DarkSky properties:
  * - alerts

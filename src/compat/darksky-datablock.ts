@@ -1,7 +1,7 @@
 /**
  * These types are used for mapping the OpenWeatherMap response values to DarkSky's API.
  *
- * You can read more about it from the {@link https://openweathermap.org/darksky-openweather#match | documentation}.
+ * You can read more about it from the {@link https://openweathermap.org/darksky-openweather#match documentation}.
  *
  * @packagedocumentation
  */
@@ -14,7 +14,7 @@ import { DarkSkyWeatherIcon, mapToDarkSkyWeatherIcon } from "./darksky-icons"
 /**
  * A data block object represents the various weather phenomena occurring over a period of time.
  *
- * See {@link https://darksky.net/dev/docs#data-block-object | DarkSky API docs} for more.
+ * See {@link https://darksky.net/dev/docs#data-block-object DarkSky API docs} for more.
  */
 export interface DarkSkyDataBlock {
   /**
@@ -30,7 +30,7 @@ export interface DarkSkyDataBlock {
   /**
    * The original OpenWeatherMap condition icon id.
    *
-   * See {@link https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2 | Weather Condition Codes} for more info.
+   * See {@link https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2 Weather Condition Codes} for more info.
    */
   originalIcon?: WeatherIcon
 
@@ -49,7 +49,7 @@ export type PrecipitationType = "rain" | "snow"
  * a period of time: an instant in the case of currently, a minute for minutely, an
  * hour for hourly, and a day for daily.
  *
- * See {@link https://darksky.net/dev/docs#data-point-object | DarkSky API Docs} for more.
+ * See {@link https://darksky.net/dev/docs#data-point-object DarkSky API Docs} for more.
  */
 export interface DarkSkyDataPoint {
   /**
@@ -72,7 +72,7 @@ export interface DarkSkyDataPoint {
   /**
    * The original OpenWeatherMap condition icon id.
    *
-   * See {@link https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2 | Weather Condition Codes} for more info.
+   * See {@link https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2 Weather Condition Codes} for more info.
    */
   originalIcon: WeatherIcon
 

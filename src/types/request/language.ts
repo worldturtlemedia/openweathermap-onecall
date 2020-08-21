@@ -3,7 +3,7 @@
  *
  * Used in the `lang=` parameter.
  *
- * See {@link https://openweathermap.org/api/one-call-api#multi | Translating summaries} for more information.
+ * See {@link https://openweathermap.org/api/one-call-api#multi Translating summaries} for more information.
  */
 export enum Language {
   Afrikaans = "af",

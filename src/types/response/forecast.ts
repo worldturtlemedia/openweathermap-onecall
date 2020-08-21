@@ -6,7 +6,7 @@ import { DailyDataBlock } from "./daily"
 /**
  * API response for OpenWeatherMap's one-call endpoint.
  *
- * See {@link https://openweathermap.org/api/one-call-api#parameter | Api Parameters} for more info.
+ * See {@link https://openweathermap.org/api/one-call-api#parameter Api Parameters} for more info.
  */
 export interface Forecast {
   /**
