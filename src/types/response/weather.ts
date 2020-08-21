@@ -1,4 +1,4 @@
-import { ConditionIcon } from "./condition"
+import { WeatherIcon } from "./weathericon"
 
 /**
  * User-facing information about the weather conditions.
@@ -26,5 +26,5 @@ export interface WeatherBlock {
   /**
    * Weather condition icon id.
    */
-  icon: ConditionIcon
+  icon: WeatherIcon
 }

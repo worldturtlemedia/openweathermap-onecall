@@ -6,9 +6,7 @@ A Nodejs and Browser client for the new [OpenWeatherMap "One Call" API](https://
 
 ### TODO Badges
 
-An API wrapper for [OpenWeatherMap "One Call" API](https://openweathermap.org/api/one-call-api), usable in node and the browser. It pairs best when used in a TypeScript project, as you will get all the types from the API response.
-
-This library makes interacting with the OpenWeatherMap "One Call" API a little bit more friendly. It offers promises, request customization, and best of all response types.
+An API wrapper for OWM One Call API, usable in node and the browser. It pairs best when used in a TypeScript project, as you will get all the types from the API response. This library makes interacting with the OpenWeatherMap "One Call" API a little bit more friendly. It offers promises, request customization, and best of all response types.
 
 If there are any features you would like, please feel free to open up an issue.
 
@@ -56,7 +54,7 @@ TODO
 
 ## License
 
-```text
+```
 MIT License
 
 Copyright (c) 2020 Jordon de Hoog

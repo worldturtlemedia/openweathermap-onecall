@@ -3,7 +3,7 @@
  *
  * See {@link https://openweathermap.org/weather-conditions | Weather Conditions} for more information.
  */
-export enum ConditionIcon {
+export enum WeatherIcon {
   ClearSky = "01d",
   ClearSkyNight = "01n",
 
