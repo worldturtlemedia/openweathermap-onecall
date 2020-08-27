@@ -25,17 +25,9 @@
     "lint:fix": "tsdx lint --fix",
     "prepare": "tsdx build"
   },
-  "peerDependencies": {},
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
-      "pre-commit": "tsdx lint"
-    }
-  },
-  "prettier": {
-    "printWidth": 80,
-    "semi": false,
-    "trailingComma": "es5"
+  "dependencies": {
+    "axios": "^0.20.0",
+    "date-fns": "^2.16.0"
   },
   "devDependencies": {
     "commitizen": "4.2.1",
@@ -47,12 +39,20 @@
     "typedoc": "0.17.0-3",
     "typescript": "4.0.2"
   },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": false,
+    "trailingComma": "es5"
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  },
-  "dependencies": {
-    "axios": "^0.20.0"
   }
 }

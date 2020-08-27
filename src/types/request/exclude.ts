@@ -11,3 +11,15 @@ export enum Exclude {
   Hourly = "hourly",
   Daily = "daily",
 }
+
+/**
+ * A list containing all of the [[Exclude]] values.
+ *
+ * @internal
+ */
+export const EXCLUDE_ALL = [
+  Exclude.Currently,
+  Exclude.Minutely,
+  Exclude.Hourly,
+  Exclude.Daily,
+]

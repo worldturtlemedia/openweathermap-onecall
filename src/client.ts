@@ -1,7 +1,12 @@
 import axios, { AxiosRequestConfig } from "axios"
 
-import { OneCallRequestParams, OneCallRequest, Forecast } from "./types"
-import { isNumber } from "./util/misc"
+import {
+  RequestParams,
+  ForecastRequest,
+  Forecast,
+  TimeMachineRequest,
+} from "./types"
+import { isNumber, parseTimeMachineDate } from "./util/misc"
 import { badRequest } from "./util/errors"
 
 /**
@@ -25,8 +30,13 @@ export interface OpenWeatherMapClient {
    * @param optionalParams Optional query params to add to the request.
    */
   forecast: <R extends Forecast>(
-    request: OneCallRequest,
-    optionalParams?: OneCallRequestParams
+    request: ForecastRequest,
+    optionalParams?: RequestParams
+  ) => Promise<R>
+
+  timeMachine: <R extends Forecast>(
+    request: TimeMachineRequest,
+    optionalParams?: RequestParams
   ) => Promise<R>
 }
 
@@ -44,7 +54,9 @@ export function openWeatherMapClient(
   requestConfig: AxiosRequestConfig = {}
 ): OpenWeatherMapClient {
   return {
-    forecast: (request: OneCallRequest, params: OneCallRequestParams = {}) =>
+    forecast: (request: ForecastRequest, params: RequestParams = {}) =>
+      doRequest(apiToken, request, params, requestConfig),
+    timeMachine: (request: TimeMachineRequest, params: RequestParams = {}) =>
       doRequest(apiToken, request, params, requestConfig),
   }
 }
@@ -62,8 +74,8 @@ export function openWeatherMapClient(
  */
 async function doRequest<R extends Forecast>(
   apiToken: string,
-  request: OneCallRequest,
-  optionalParams: OneCallRequestParams,
+  request: ForecastRequest,
+  optionalParams: RequestParams,
   requestConfig: AxiosRequestConfig
 ): Promise<R> {
   const url = createAPIUrl(apiToken, request, optionalParams)
@@ -83,8 +95,8 @@ async function doRequest<R extends Forecast>(
  */
 function createAPIUrl(
   apiToken: string,
-  { lat, lon }: OneCallRequest,
-  optionalParams: OneCallRequestParams
+  { lat, lon, time }: ForecastRequest,
+  optionalParams: RequestParams
 ): string {
   if (!apiToken) {
     throw badRequest("API Token is required!")
@@ -94,8 +106,15 @@ function createAPIUrl(
     throw badRequest("Latitude and Longitude need to be a valid number!")
   }
 
-  const queryParams = createQueryParams(apiToken, { lat, lon }, optionalParams)
-  return `${API_BASE}${queryParams}`
+  const timestamp = parseTimeMachineDate(time)
+  const url = timestamp ? `${API_BASE}/timemachine` : API_BASE
+
+  const queryParams = createQueryParams(
+    apiToken,
+    { lat, lon, time },
+    optionalParams
+  )
+  return `${url}${queryParams}`
 }
 
 /**
@@ -118,10 +137,15 @@ function createAPIUrl(
  */
 function createQueryParams(
   apiToken: string,
-  request: OneCallRequest,
-  optionalParams: OneCallRequestParams
+  { time, ...request }: ForecastRequest,
+  optionalParams: RequestParams
 ) {
-  const obj = { appid: apiToken, ...request, ...optionalParams } as any
+  const obj = {
+    appid: apiToken,
+    dt: time,
+    ...request,
+    ...optionalParams,
+  } as any
 
   // Filter out any invalid values, such as nulls and undefined, and expand arrays.
   const params = Object.keys(obj)
