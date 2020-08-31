@@ -20,7 +20,8 @@ export function isNumber(value: any): boolean {
  * @returns `true` if value is an object.
  */
 export function isObject(value: any): boolean {
-  return typeof value === "object" && value != null
+  if (value === null || value === undefined) return false
+  return Object.getPrototypeOf(value).isPrototypeOf(Object)
 }
 
 /**

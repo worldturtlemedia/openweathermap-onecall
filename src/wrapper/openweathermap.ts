@@ -8,7 +8,7 @@ import {
   DayForecast,
   HourForecast,
 } from "../types"
-import { notFound } from "util/errors"
+import { notFound } from "../util/errors"
 
 /**
  * A `class` based wrapper for a [[OpenWeatherMapClient]]
