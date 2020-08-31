@@ -65,7 +65,7 @@
     "coverageReporters": [
       "lcov",
       "html",
-      "text-summary"
+      "text"
     ]
   }
 }
