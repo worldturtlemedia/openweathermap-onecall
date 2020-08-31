@@ -3803,7 +3803,7 @@ jest-message-util@^24.9.0:
     slash "^2.0.0"
     stack-utils "^1.0.1"
 
-jest-mock-axios@^4.2.1:
+jest-mock-axios@4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/jest-mock-axios/-/jest-mock-axios-4.2.1.tgz#cf01d186c12bace381bded70d0443626c8be9114"
   integrity sha512-YUoV+A/Z6HWJePwXVc/4/Gtu1AgKqYNZ6ngjV+1kGepREni5aOPlmHyiwiH+lNuyoLOhtgBVROZf8ij1Va8oAw==
