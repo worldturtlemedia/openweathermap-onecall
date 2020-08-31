@@ -53,7 +53,7 @@ export interface RequestParams {
    * Exclude some number of data blocks from the API response. This is useful for
    * reducing latency and saving cache space.
    */
-  exclude?: Exclude | Exclude[]
+  exclude?: Exclude[]
 
   /**
    * Return weather conditions in the requested units.

@@ -20,5 +20,6 @@
     },
     "jsx": "react",
     "esModuleInterop": true
-  }
+  },
+  "exclude": ["test/__mocks__"]
 }
