@@ -1,4 +1,5 @@
 import { WeatherBlock } from "./weather"
+import { TemperatureBlock, TemperatureDayBlock } from "./daily"
 
 /**
  * Precipitation data point.
@@ -28,7 +29,7 @@ export interface DataBlock {
    *
    * Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.
    */
-  temp: any
+  temp: number | TemperatureBlock
 
   /**
    * Temperature that accounts for the human perception of weather.
@@ -37,7 +38,7 @@ export interface DataBlock {
    *
    * [[Units]] – default: kelvin, metric: Celsius, imperial: Fahrenheit.
    */
-  feels_like: any
+  feels_like: number | TemperatureDayBlock
 
   /**
    * Atmospheric temperature on the sea level, measured in hectopascal (hPa).
@@ -93,15 +94,20 @@ export interface DataBlock {
   /**
    * Volume of rain for the last hour, measured in mm.
    */
-  rain?: any
+  rain?: PrecipitationDataPoint | number
 
   /**
    * Volume of snow for the last hour, measured in mm.
    */
-  snow?: any
+  snow?: PrecipitationDataPoint | number
 
   /**
    * A block of user-facing weather information.
    */
   weather: WeatherBlock
+
+  /**
+   * Midday UV index.
+   */
+  uvi?: number
 }

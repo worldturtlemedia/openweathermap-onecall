@@ -18,37 +18,7 @@ export interface DailyDataBlock extends DataBlock {
    *
    * Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.
    */
-  temp: {
-    /**
-     * Morning temperature.
-     */
-    morn: number
-
-    /**
-     * Day temperature.
-     */
-    day: number
-
-    /**
-     * Evening temperature.
-     */
-    eve: number
-
-    /**
-     * Night temperature.
-     */
-    night: number
-
-    /**
-     * Minimum daily temperature.
-     */
-    min: number
-
-    /**
-     * Maximum daily temperature.
-     */
-    max: number
-  }
+  temp: TemperatureBlock
 
   /**
    * Temperature that accounts for the human perception of weather.
@@ -57,27 +27,7 @@ export interface DailyDataBlock extends DataBlock {
    *
    * [[Units]] – default: kelvin, metric: Celsius, imperial: Fahrenheit.
    */
-  feels_like: {
-    /**
-     * Morning apparent temperature.
-     */
-    morn: number
-
-    /**
-     * Day apparent temperature.
-     */
-    day: number
-
-    /**
-     * Evening apparent temperature.
-     */
-    eve: number
-
-    /**
-     * Night apparent temperature.
-     */
-    night: number
-  }
+  feels_like: TemperatureDayBlock
 
   /**
    * Midday UV index.
@@ -93,4 +43,38 @@ export interface DailyDataBlock extends DataBlock {
    * Volume of snow for the day, measured in mm.
    */
   snow?: number
+}
+
+export interface TemperatureDayBlock {
+  /**
+   * Morning temperature.
+   */
+  morn: number
+
+  /**
+   * Day temperature.
+   */
+  day: number
+
+  /**
+   * Evening temperature.
+   */
+  eve: number
+
+  /**
+   * Night temperature.
+   */
+  night: number
+}
+
+export interface TemperatureBlock extends TemperatureDayBlock {
+  /**
+   * Minimum daily temperature.
+   */
+  min: number
+
+  /**
+   * Maximum daily temperature.
+   */
+  max: number
 }

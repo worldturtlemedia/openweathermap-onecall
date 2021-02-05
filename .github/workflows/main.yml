@@ -1,42 +1,118 @@
 name: CI
-on: [push]
+on: [push, pull_request]
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Begin CI...
+      - name: Checkout code
         uses: actions/checkout@v2
-
-      - name: Use Node 12
-        uses: actions/setup-node@v1
+      - name: Restore cache
+        uses: actions/cache@v2
         with:
-          node-version: 12.x
-
-      - name: Use cached node_modules
-        uses: actions/cache@v1
+          path: |
+            node_modules
+            **/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('./yarn.lock') }}
+      - name: Use Node 14
+        uses: actions/setup-node@v2
         with:
-          path: node_modules
-          key: nodeModules-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            nodeModules-
-
+          node-version: 14.x
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
-        env:
-          CI: true
-
-      - name: Lint
+        run: yarn --frozen-lockfile --non-interactive
+      - name: Lint all files
         run: yarn lint
-        env:
-          CI: true
 
-      - name: Test
-        run: yarn test --ci --coverage --maxWorkers=2
-        env:
-          CI: true
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Restore cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            **/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('./yarn.lock') }}
+      - name: Use Node 14
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+      - name: Install dependencies
+        run: yarn --frozen-lockfile --non-interactive
+      - name: Run tests with coverage
+        run: yarn test:coverage --ci --maxWorkers=2
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1
+        with:
+          directory: ./coverage
+          fail_ci_if_error: true
+      - name: Archive coverage results
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage
+          path: coverage
 
-      - name: Build
+  build:
+    needs: [lint, test]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Restore cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            **/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('./yarn.lock') }}
+      - name: Use Node 14
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+      - name: Install dependencies
+        run: yarn --frozen-lockfile --non-interactive
+      - name: Build library
         run: yarn build
-        env:
-          CI: true
+      - name: Archive build files
+        uses: actions/upload-artifact@v2
+        with:
+          name: dist
+          path: dist
+      # TODO: Move documentation to new job and publish to gh-pages
+      - name: Generate documentation
+        run: yarn docs
+      - name: Archive documentation
+        uses: actions/upload-artifact@v2
+        with:
+          name: documentation
+          path: docs
+  # deploy:
+  #   needs: [lint, test, build]
+  #   runs-on: ubuntu-latest
+  #   if: github.event_name == 'push' && github.repository_owner == 'worldturtlemedia' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/next')
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v2
+  #     - name: Restore cache
+  #       uses: actions/cache@v2
+  #       with:
+  #         path: |
+  #           node_modules
+  #           **/node_modules
+  #         key: ${{ runner.os }}-${{ hashFiles('./yarn.lock') }}
+  #     - name: Use Node 14
+  #       uses: actions/setup-node@v1
+  #       with:
+  #         node-version: 14.x
+  #     - name: Install dependencies
+  #       run: yarn --frozen-lockfile --non-interactive
+  #     - name: Run Semantic Release
+  #       uses: cycjimmy/semantic-release-action@v2
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+  #     - name: On release
+  #       if: steps.semantic.outputs.new_release_published == 'true'
+  #       run: |
+  #         echo Released verion: ${{ steps.semantic.outputs.new_release_version }} to ${{ steps.semantic.outputs.new_release_channel }}

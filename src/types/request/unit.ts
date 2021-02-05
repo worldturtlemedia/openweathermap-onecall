@@ -1,7 +1,7 @@
 /**
  * Accepted units for temperature supported my OpenWeatherMap.
  *
- * See {@link https://openweathermap.org/api/one-call-api#data | Units Docs} for more info.
+ * See {@link https://openweathermap.org/api/one-call-api#data Units Docs} for more info.
  */
 export enum Units {
   /**

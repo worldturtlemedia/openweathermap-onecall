@@ -1,4 +1,4 @@
-export { ConditionIcon } from "./condition"
+export { WeatherIcon } from "./weathericon"
 export * from "./current"
 export * from "./daily"
 export { PrecipitationDataPoint } from "./datablock"

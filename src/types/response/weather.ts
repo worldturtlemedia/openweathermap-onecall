@@ -1,4 +1,4 @@
-import { ConditionIcon } from "./condition"
+import { WeatherIcon } from "./weathericon"
 
 /**
  * User-facing information about the weather conditions.
@@ -7,7 +7,7 @@ export interface WeatherBlock {
   /**
    * Weather condition id.
    *
-   * See {@link https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2 | Weather Condition Codes} for more info.
+   * See {@link https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2 Weather Condition Codes} for more info.
    */
   id: number
 
@@ -26,5 +26,5 @@ export interface WeatherBlock {
   /**
    * Weather condition icon id.
    */
-  icon: ConditionIcon
+  icon: WeatherIcon
 }
