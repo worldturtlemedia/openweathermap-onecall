@@ -16,12 +16,12 @@
   "scripts": {
     "start": "tsdx watch",
     "predocs": "rimraf docs",
-    "docs": "typedoc --out docs --exclude '**/__mocks__/**' --excludeExternals --stripInternal --target es6 --includeDeclarations --excludePrivate --mode library src/index.ts",
+    "docs": "typedoc --out docs --exclude '**/__mocks__/**' --excludePrivate --excludeInternal src/index.ts",
     "build": "tsdx build --format umd,esm,cjs",
     "test": "tsdx test",
     "test:watch": "tsdx test --watch",
     "test:coverage": "tsdx test --coverage",
-    "lint": "tsdx lint",
+    "lint": "tsdx lint src test",
     "lint:fix": "tsdx lint --fix"
   },
   "dependencies": {
@@ -36,7 +36,7 @@
     "rimraf": "3.0.2",
     "tsdx": "0.14.1",
     "tslib": "2.1.0",
-    "typedoc": "0.17.0-3",
+    "typedoc": "0.20.21",
     "typescript": "4.1.3"
   },
   "husky": {

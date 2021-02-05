@@ -54,7 +54,7 @@ TODO
 
 ## License
 
-```
+```text
 MIT License
 
 Copyright (c) 2020 Jordon de Hoog
