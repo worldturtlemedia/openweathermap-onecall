@@ -1,6 +1,13 @@
 import mockAxios from "jest-mock-axios"
 
-import { Exclude, Forecast, Language, OpenWeatherMap, Units } from "../../src"
+import {
+  Exclude,
+  Forecast,
+  Language,
+  OpenWeatherMap,
+  RequestParams,
+  Units,
+} from "../../src"
 import { API_TIME_MACHINE } from "../../src/client"
 import { parseTimeMachineDate } from "../../src/util/misc"
 
@@ -19,6 +26,24 @@ describe("OpenWeatherMap class", () => {
   it("Should construct a OpenWeatherMap instance", () => {
     const instance = new OpenWeatherMap("foo")
     expect(instance.forecast).toBeInstanceOf(Function)
+  })
+
+  it("Should construct a OpenWeatherMap instance with axios params", () => {
+    new OpenWeatherMap("foo", { requestConfig: { headers: "foo" } })
+      .forecast(42, 42)
+      .then(jest.fn())
+
+    expect(mockAxios.get).toBeCalledWith(
+      expect.any(String),
+      expect.objectContaining({ headers: "foo" })
+    )
+  })
+
+  it("Should construct a OpenWeatherMap instance with optional params", () => {
+    const instance: any = new OpenWeatherMap("foo", { units: Units.Default })
+    const params: RequestParams = instance.requestParams
+
+    expect(params.units).toEqual(Units.Default)
   })
 
   it("Should perform a forecast request", () => {

@@ -11,6 +11,11 @@ describe("Error helpers", () => {
     expect(error.message).toEqual("Message\ndata")
   })
 
+  it("should not add undefined data", () => {
+    const error = new HttpException(404, "Message", undefined)
+    expect(error.message).toEqual("Message")
+  })
+
   it("should create a bad request error", () => {
     expect(badRequest("foo").message).toContain("foo")
   })
