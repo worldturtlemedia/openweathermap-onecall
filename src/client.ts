@@ -18,6 +18,15 @@ import { badRequest } from "./util/errors"
  */
 export const API_BASE = "https://api.openweathermap.org/data/2.5/onecall"
 
+const API_PATH_TIME_MACHINE = "timemachine"
+
+/**
+ * API url for a Time Machine request from the OpenWeatherMap API.
+ *
+ * @internal
+ */
+export const API_TIME_MACHINE = `${API_BASE}/${API_PATH_TIME_MACHINE}`
+
 /**
  * Basic client definintion for interacting with the OpenWeatherMap OneCall API.
  */
@@ -107,11 +116,11 @@ function createAPIUrl(
   }
 
   const timestamp = parseTimeMachineDate(time)
-  const url = timestamp ? `${API_BASE}/timemachine` : API_BASE
+  const url = timestamp ? API_TIME_MACHINE : API_BASE
 
   const queryParams = createQueryParams(
     apiToken,
-    { lat, lon, time },
+    { lat, lon, time: timestamp },
     optionalParams
   )
   return `${url}${queryParams}`

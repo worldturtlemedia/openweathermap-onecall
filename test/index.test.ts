@@ -5,5 +5,6 @@ describe("exports", () => {
     expect(library.openWeatherMapClient).toBeDefined()
     expect(library.buildOpenWeatherMapRequest).toBeDefined()
     expect(library.OpenWeatherMap).toBeDefined()
+    expect(library.WeatherIcon).toBeDefined()
   })
 })
