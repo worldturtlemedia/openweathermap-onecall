@@ -23,4 +23,15 @@ describe("Error helpers", () => {
   it("should create a not found error", () => {
     expect(notFound("foo").message).toContain("foo")
   })
+
+  it("should handle no data", () => {
+    expect(badRequest().message).toEqual("Bad Request")
+    expect(badRequest(undefined).message).toEqual("Bad Request")
+
+    expect(notFound().message).toEqual("Not Found")
+    expect(notFound(undefined).message).toEqual("Not Found")
+
+    expect(new HttpException(1, "foo", undefined).message).toEqual("foo")
+    expect(new HttpException(1, "foo").message).toEqual("foo")
+  })
 })
