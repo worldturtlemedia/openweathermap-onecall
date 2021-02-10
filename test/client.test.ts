@@ -1,7 +1,8 @@
 import mockAxios from "jest-mock-axios"
 
 import { openWeatherMapClient, Exclude, Units, Language } from "../src"
-import { API_BASE } from "../src/client"
+import { API_TIME_MACHINE } from "../src/client"
+import { parseTimeMachineDate } from "../src/util/misc"
 
 describe("Client", () => {
   afterEach(() => {
@@ -30,7 +31,7 @@ describe("Client", () => {
       .then(jest.fn())
 
     expect(mockAxios.get).toHaveBeenCalledWith(
-      expect.stringContaining(`${API_BASE}/timemachine`),
+      expect.stringContaining(API_TIME_MACHINE),
       {}
     )
   })
@@ -98,6 +99,19 @@ describe("Client", () => {
     openWeatherMapClient("token").timeMachine({ lat: 42, lon: 24, time: 123 })
 
     expect(mockAxios.lastReqGet().url).toContain("dt=123")
+  })
+
+  it("should create a time machine url from a Date object", () => {
+    const target = new Date()
+    const expected = parseTimeMachineDate(target)
+
+    openWeatherMapClient("token").timeMachine({
+      lat: 42,
+      lon: 24,
+      time: target,
+    })
+
+    expect(mockAxios.lastReqGet().url).toContain(`dt=${expected}`)
   })
 
   it("should return the response data", async () => {

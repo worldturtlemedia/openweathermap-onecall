@@ -10,9 +10,9 @@ import {
 import { EXCLUDE_ALL } from "../types/request/exclude"
 
 /**
- * An implementation of [[OneCallBase]] that allows for chaining method calls to customize the request.
+ * An implementation of [[OpenWeatherMapBase]] that allows for chaining method calls to customize the request.
  *
- * * Note: Should only be used via [[createRequestChain]] or `OpenWeatherMap.builder`.
+ * * Note: Should only be used via [[buildOpenWeatherMapRequest]] or `OpenWeatherMap.builder`.
  *
  * @private
  */
@@ -34,6 +34,9 @@ export class OpenWeatherMapBuilder extends OpenWeatherMapBase {
 
   /**
    * Set multiple request query parameters at once using a RequestParams.
+   *
+   * **Warning**: This will **not** merge previously excluded data blocks. To add more
+   * excluded data blocks call `OpenWeatherMapBuilder.exclude`
    *
    * @param params Params to override the current Query parameters.
    * @returns Chain
@@ -90,10 +93,8 @@ export class OpenWeatherMapBuilder extends OpenWeatherMapBase {
    * @param exclude List of datablocks to exclude from the response.
    */
   exclude(...exclude: Exclude[]) {
-    this.requestParams.exclude = [
-      ...(this.requestParams.exclude || []),
-      ...exclude,
-    ]
+    const array = [...(this.requestParams.exclude || []), ...exclude]
+    this.requestParams.exclude = [...new Set(array)]
     return this
   }
 
@@ -216,7 +217,7 @@ export class OpenWeatherMapBuilder extends OpenWeatherMapBase {
  *
  * ```typescript
  * // Only get the hourly forecast, and extend it.
- * createRequestChain("api-token", 42, -42)
+ * buildOpenWeatherMapRequest("api-token", 42, -42)
  *  .units(Units.Metric)
  *  .onlyHourly()
  *  .execute()

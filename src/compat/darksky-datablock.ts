@@ -11,6 +11,9 @@ import { DataBlock, PrecipitationDataPoint } from "../types/response/datablock"
 import { isNumber, isObject } from "../util/misc"
 import { DarkSkyWeatherIcon, mapToDarkSkyWeatherIcon } from "./darksky-icons"
 
+export const PRECIPITATION_RAIN = "rain"
+export const PRECIPITATION_SNOW = "snow"
+
 /**
  * A data block object represents the various weather phenomena occurring over a period of time.
  *
@@ -186,8 +189,8 @@ export interface DarkSkyDataPoint {
 function parsePrecipitationType(
   block: DataBlock
 ): PrecipitationType | undefined {
-  if (block.rain) return "rain"
-  else if (block.snow) return "snow"
+  if (block.rain) return PRECIPITATION_RAIN
+  else if (block.snow) return PRECIPITATION_SNOW
 
   return undefined
 }

@@ -5,6 +5,7 @@
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/openweathermap-onecall.esm.js",
+  "browser": "dist/openweathermap-onecall.umd.production.min.js",
   "typings": "dist/types/index.d.ts",
   "sideEffects": false,
   "files": [
