@@ -52,7 +52,7 @@ export interface OpenWeatherMapClient {
 /**
  * Default implementation of ClientFactory for making authorized requests to the DarkSky API.
  *
- * Note: Get your token from {@link https://darksky.net/dev/account OpenWeatherMap}.
+ * Note: Get your token from {@link https://openweathermap.org/full-price#current OpenWeatherMap}.
  *
  * @param apiToken Developer API token.
  * @param requestConfig Optional config to change the way axios makes the request.

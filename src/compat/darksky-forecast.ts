@@ -102,3 +102,8 @@ export function mapToDarkSkyForecast(forecast: Forecast): DarkSkyForecast {
     daily: mapDailyToDarkSky(forecast.daily),
   }
 }
+
+export async function mapResultToDarkSkyForecast(promise: Promise<Forecast>) {
+  const result = await promise
+  return mapToDarkSkyForecast(result)
+}

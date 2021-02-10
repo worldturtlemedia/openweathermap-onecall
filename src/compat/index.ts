@@ -11,3 +11,5 @@ export {
   DarkSkyMinutelyDataBlock,
   DarkSkyMinutelyDataPoint,
 } from "./darksky-minutely"
+export { DarkSkyForecastRequest } from "./darksky-request"
+export { darkSkyCompatClient } from "./darksky-client"
