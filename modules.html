@@ -1,0 +1,574 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>openweathermap-onecall</title>
+	<meta name="description" content="Documentation for openweathermap-onecall">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">openweathermap-onecall</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>openweathermap-onecall</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Enumerations</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-enum"><a href="enums/darkskyweathericon.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Weather<wbr>Icon</a></li>
+								<li class="tsd-kind-enum"><a href="enums/exclude.html" class="tsd-kind-icon">Exclude</a></li>
+								<li class="tsd-kind-enum"><a href="enums/language.html" class="tsd-kind-icon">Language</a></li>
+								<li class="tsd-kind-enum"><a href="enums/units.html" class="tsd-kind-icon">Units</a></li>
+								<li class="tsd-kind-enum"><a href="enums/weathericon.html" class="tsd-kind-icon">Weather<wbr>Icon</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Classes</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-class"><a href="classes/openweathermap.html" class="tsd-kind-icon">Open<wbr>Weather<wbr>Map</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface"><a href="interfaces/currentdatablock.html" class="tsd-kind-icon">Current<wbr>Data<wbr>Block</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/currentforecast.html" class="tsd-kind-icon">Current<wbr>Forecast</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/dailydatablock.html" class="tsd-kind-icon">Daily<wbr>Data<wbr>Block</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/darkskycurrentdatapoint.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Current<wbr>Data<wbr>Point</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/darkskycurrentforecast.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Current<wbr>Forecast</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/darkskydailydatablock.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Daily<wbr>Data<wbr>Block</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/darkskydailydatapoint.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Daily<wbr>Data<wbr>Point</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/darkskydatablock.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Data<wbr>Block</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/darkskydatapoint.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Data<wbr>Point</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/darkskydayforecast.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Day<wbr>Forecast</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/darkskyforecast.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Forecast</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/darkskyforecastrequest.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Forecast<wbr>Request</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/darkskyhourforecast.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Hour<wbr>Forecast</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/darkskyhourlydatablock.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Hourly<wbr>Data<wbr>Block</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/darkskyhourlydatapoint.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Hourly<wbr>Data<wbr>Point</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/darkskyminutelydatablock.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Minutely<wbr>Data<wbr>Block</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/darkskyminutelydatapoint.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Minutely<wbr>Data<wbr>Point</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/darkskyweekforecast.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Week<wbr>Forecast</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/dayforecast.html" class="tsd-kind-icon">Day<wbr>Forecast</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/forecast.html" class="tsd-kind-icon">Forecast</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/forecastrequest.html" class="tsd-kind-icon">Forecast<wbr>Request</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/fullforecast.html" class="tsd-kind-icon">Full<wbr>Forecast</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/hourforecast.html" class="tsd-kind-icon">Hour<wbr>Forecast</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/hourlydatablock.html" class="tsd-kind-icon">Hourly<wbr>Data<wbr>Block</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/minutelydatablock.html" class="tsd-kind-icon">Minutely<wbr>Data<wbr>Block</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/openweathermapclient.html" class="tsd-kind-icon">Open<wbr>Weather<wbr>Map<wbr>Client</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/openweathermapoptions.html" class="tsd-kind-icon">Open<wbr>Weather<wbr>Map<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/precipitationdatapoint.html" class="tsd-kind-icon">Precipitation<wbr>Data<wbr>Point</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/requestparams.html" class="tsd-kind-icon">Request<wbr>Params</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/temperatureblock.html" class="tsd-kind-icon">Temperature<wbr>Block</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/temperaturedayblock.html" class="tsd-kind-icon">Temperature<wbr>Day<wbr>Block</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/timemachinerequest.html" class="tsd-kind-icon">Time<wbr>Machine<wbr>Request</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/weatherblock.html" class="tsd-kind-icon">Weather<wbr>Block</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/weekforecast.html" class="tsd-kind-icon">Week<wbr>Forecast</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias"><a href="modules.html#timemachinedate" class="tsd-kind-icon">Time<wbr>Machine<wbr>Date</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="modules.html#buildopenweathermaprequest" class="tsd-kind-icon">build<wbr>Open<wbr>Weather<wbr>Map<wbr>Request</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#darkskycompatclient" class="tsd-kind-icon">dark<wbr>Sky<wbr>Compat<wbr>Client</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#mapresulttodarkskyforecast" class="tsd-kind-icon">map<wbr>Result<wbr>ToDark<wbr>Sky<wbr>Forecast</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#maptodarkskyforecast" class="tsd-kind-icon">map<wbr>ToDark<wbr>Sky<wbr>Forecast</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#openweathermapclient" class="tsd-kind-icon">open<wbr>Weather<wbr>Map<wbr>Client</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="timemachinedate" class="tsd-anchor"></a>
+					<h3>Time<wbr>Machine<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">Time<wbr>Machine<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/worldturtlemedia/openweathermap-onecall/blob/2701449/src/types/request/request.ts#L8">types/request/request.ts:8</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Date to convert to a Unix timestamp for making time-machine requests.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="buildopenweathermaprequest" class="tsd-anchor"></a>
+					<h3>build<wbr>Open<wbr>Weather<wbr>Map<wbr>Request</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">build<wbr>Open<wbr>Weather<wbr>Map<wbr>Request<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, latitude<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, longitude<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, options<span class="tsd-signature-symbol">?: </span><a href="interfaces/openweathermapoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">OpenWeatherMapOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OpenWeatherMapBuilder</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/worldturtlemedia/openweathermap-onecall/blob/2701449/src/wrapper/builder.ts#L231">wrapper/builder.ts:231</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Conveience function for creating a Request Chain.</p>
+								</div>
+								<p>Example usage:</p>
+								<pre><code class="language-typescript"><span style="color: #008000">// Only get the hourly forecast, and extend it.</span>
+<span style="color: #795E26">buildOpenWeatherMapRequest</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;api-token&quot;</span><span style="color: #000000">, </span><span style="color: #098658">42</span><span style="color: #000000">, -</span><span style="color: #098658">42</span><span style="color: #000000">)</span>
+<span style="color: #000000"> .</span><span style="color: #795E26">units</span><span style="color: #000000">(</span><span style="color: #001080">Units</span><span style="color: #000000">.</span><span style="color: #001080">Metric</span><span style="color: #000000">)</span>
+<span style="color: #000000"> .</span><span style="color: #795E26">onlyHourly</span><span style="color: #000000">()</span>
+<span style="color: #000000"> .</span><span style="color: #795E26">execute</span><span style="color: #000000">()</span>
+</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>token: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>OpenWeatherMap developer API token.</p>
+									</div>
+								</li>
+								<li>
+									<h5>latitude: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The latitude of a location (in decimal degrees).</p>
+									</div>
+								</li>
+								<li>
+									<h5>longitude: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The longitude of a location (in decimal degrees).</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="interfaces/openweathermapoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">OpenWeatherMapOptions</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Optional query params for the request.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">OpenWeatherMapBuilder</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="darkskycompatclient" class="tsd-anchor"></a>
+					<h3>dark<wbr>Sky<wbr>Compat<wbr>Client</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">dark<wbr>Sky<wbr>Compat<wbr>Client<span class="tsd-signature-symbol">(</span>apiToken<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, requestConfig<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">AxiosRequestConfig</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>forecast<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="interfaces/forecastrequest.html" class="tsd-signature-type" data-tsd-kind="Interface">ForecastRequest</a><span class="tsd-signature-symbol"> | </span><a href="interfaces/darkskyforecastrequest.html" class="tsd-signature-type" data-tsd-kind="Interface">DarkSkyForecastRequest</a>, params<span class="tsd-signature-symbol">?: </span><a href="interfaces/requestparams.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestParams</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/darkskyforecast.html" class="tsd-signature-type" data-tsd-kind="Interface">DarkSkyForecast</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>timeMachine<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="interfaces/timemachinerequest.html" class="tsd-signature-type" data-tsd-kind="Interface">TimeMachineRequest</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">DarkSkyTimeMachineRequest</span>, params<span class="tsd-signature-symbol">?: </span><a href="interfaces/requestparams.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestParams</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/darkskyforecast.html" class="tsd-signature-type" data-tsd-kind="Interface">DarkSkyForecast</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/worldturtlemedia/openweathermap-onecall/blob/2701449/src/compat/darksky-client.ts#L21">compat/darksky-client.ts:21</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a DarkSky compatible <a href="interfaces/openweathermapclient.html">OpenWeatherMapClient</a>.</p>
+								</div>
+								<p>Note: Get your token from <a href="https://openweathermap.org/full-price#current" class="external">OpenWeatherMap</a>.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>apiToken: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Developer API token.</p>
+									</div>
+								</li>
+								<li>
+									<h5>requestConfig: <span class="tsd-signature-type">AxiosRequestConfig</span><span class="tsd-signature-symbol"> = ...</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Optional config to change the way axios makes the request.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>forecast<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="interfaces/forecastrequest.html" class="tsd-signature-type" data-tsd-kind="Interface">ForecastRequest</a><span class="tsd-signature-symbol"> | </span><a href="interfaces/darkskyforecastrequest.html" class="tsd-signature-type" data-tsd-kind="Interface">DarkSkyForecastRequest</a>, params<span class="tsd-signature-symbol">?: </span><a href="interfaces/requestparams.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestParams</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/darkskyforecast.html" class="tsd-signature-type" data-tsd-kind="Interface">DarkSkyForecast</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>timeMachine<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="interfaces/timemachinerequest.html" class="tsd-signature-type" data-tsd-kind="Interface">TimeMachineRequest</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">DarkSkyTimeMachineRequest</span>, params<span class="tsd-signature-symbol">?: </span><a href="interfaces/requestparams.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestParams</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/darkskyforecast.html" class="tsd-signature-type" data-tsd-kind="Interface">DarkSkyForecast</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h4>
+							<p>Client for interacting with the API.</p>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter">
+									<h5>forecast<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="interfaces/forecastrequest.html" class="tsd-signature-type" data-tsd-kind="Interface">ForecastRequest</a><span class="tsd-signature-symbol"> | </span><a href="interfaces/darkskyforecastrequest.html" class="tsd-signature-type" data-tsd-kind="Interface">DarkSkyForecastRequest</a>, params<span class="tsd-signature-symbol">?: </span><a href="interfaces/requestparams.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestParams</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/darkskyforecast.html" class="tsd-signature-type" data-tsd-kind="Interface">DarkSkyForecast</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="interfaces/forecastrequest.html" class="tsd-signature-type" data-tsd-kind="Interface">ForecastRequest</a><span class="tsd-signature-symbol"> | </span><a href="interfaces/darkskyforecastrequest.html" class="tsd-signature-type" data-tsd-kind="Interface">DarkSkyForecastRequest</a>, params<span class="tsd-signature-symbol">?: </span><a href="interfaces/requestparams.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestParams</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/darkskyforecast.html" class="tsd-signature-type" data-tsd-kind="Interface">DarkSkyForecast</a><span class="tsd-signature-symbol">&gt;</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>request: <a href="interfaces/forecastrequest.html" class="tsd-signature-type" data-tsd-kind="Interface">ForecastRequest</a><span class="tsd-signature-symbol"> | </span><a href="interfaces/darkskyforecastrequest.html" class="tsd-signature-type" data-tsd-kind="Interface">DarkSkyForecastRequest</a></h5>
+														</li>
+														<li>
+															<h5>params: <a href="interfaces/requestparams.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestParams</a><span class="tsd-signature-symbol"> = ...</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/darkskyforecast.html" class="tsd-signature-type" data-tsd-kind="Interface">DarkSkyForecast</a><span class="tsd-signature-symbol">&gt;</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="tsd-parameter">
+									<h5>time<wbr>Machine<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="interfaces/timemachinerequest.html" class="tsd-signature-type" data-tsd-kind="Interface">TimeMachineRequest</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">DarkSkyTimeMachineRequest</span>, params<span class="tsd-signature-symbol">?: </span><a href="interfaces/requestparams.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestParams</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/darkskyforecast.html" class="tsd-signature-type" data-tsd-kind="Interface">DarkSkyForecast</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="interfaces/timemachinerequest.html" class="tsd-signature-type" data-tsd-kind="Interface">TimeMachineRequest</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">DarkSkyTimeMachineRequest</span>, params<span class="tsd-signature-symbol">?: </span><a href="interfaces/requestparams.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestParams</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/darkskyforecast.html" class="tsd-signature-type" data-tsd-kind="Interface">DarkSkyForecast</a><span class="tsd-signature-symbol">&gt;</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>request: <a href="interfaces/timemachinerequest.html" class="tsd-signature-type" data-tsd-kind="Interface">TimeMachineRequest</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">DarkSkyTimeMachineRequest</span></h5>
+														</li>
+														<li>
+															<h5>params: <a href="interfaces/requestparams.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestParams</a><span class="tsd-signature-symbol"> = ...</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/darkskyforecast.html" class="tsd-signature-type" data-tsd-kind="Interface">DarkSkyForecast</a><span class="tsd-signature-symbol">&gt;</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="mapresulttodarkskyforecast" class="tsd-anchor"></a>
+					<h3>map<wbr>Result<wbr>ToDark<wbr>Sky<wbr>Forecast</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">map<wbr>Result<wbr>ToDark<wbr>Sky<wbr>Forecast<span class="tsd-signature-symbol">(</span>promise<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/forecast.html" class="tsd-signature-type" data-tsd-kind="Interface">Forecast</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/darkskyforecast.html" class="tsd-signature-type" data-tsd-kind="Interface">DarkSkyForecast</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/worldturtlemedia/openweathermap-onecall/blob/2701449/src/compat/darksky-forecast.ts#L106">compat/darksky-forecast.ts:106</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>promise: <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/forecast.html" class="tsd-signature-type" data-tsd-kind="Interface">Forecast</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/darkskyforecast.html" class="tsd-signature-type" data-tsd-kind="Interface">DarkSkyForecast</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="maptodarkskyforecast" class="tsd-anchor"></a>
+					<h3>map<wbr>ToDark<wbr>Sky<wbr>Forecast</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">map<wbr>ToDark<wbr>Sky<wbr>Forecast<span class="tsd-signature-symbol">(</span>forecast<span class="tsd-signature-symbol">: </span><a href="interfaces/forecast.html" class="tsd-signature-type" data-tsd-kind="Interface">Forecast</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/darkskyforecast.html" class="tsd-signature-type" data-tsd-kind="Interface">DarkSkyForecast</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/worldturtlemedia/openweathermap-onecall/blob/2701449/src/compat/darksky-forecast.ts#L94">compat/darksky-forecast.ts:94</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Map an OpenWeatherMap Forecast result to a DarkSky equivelent object.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>forecast: <a href="interfaces/forecast.html" class="tsd-signature-type" data-tsd-kind="Interface">Forecast</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>OpenWeatherMap forecast object.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="interfaces/darkskyforecast.html" class="tsd-signature-type" data-tsd-kind="Interface">DarkSkyForecast</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="openweathermapclient" class="tsd-anchor"></a>
+					<h3>open<wbr>Weather<wbr>Map<wbr>Client</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">open<wbr>Weather<wbr>Map<wbr>Client<span class="tsd-signature-symbol">(</span>apiToken<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, requestConfig<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">AxiosRequestConfig</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/openweathermapclient.html" class="tsd-signature-type" data-tsd-kind="Interface">OpenWeatherMapClient</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/worldturtlemedia/openweathermap-onecall/blob/2701449/src/client.ts#L61">client.ts:61</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Default implementation of ClientFactory for making authorized requests to the DarkSky API.</p>
+								</div>
+								<p>Note: Get your token from <a href="https://openweathermap.org/full-price#current" class="external">OpenWeatherMap</a>.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>apiToken: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Developer API token.</p>
+									</div>
+								</li>
+								<li>
+									<h5>requestConfig: <span class="tsd-signature-type">AxiosRequestConfig</span><span class="tsd-signature-symbol"> = ...</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Optional config to change the way axios makes the request.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="interfaces/openweathermapclient.html" class="tsd-signature-type" data-tsd-kind="Interface">OpenWeatherMapClient</a></h4>
+							<p>Client for interacting with the API.</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="current ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="enums/darkskyweathericon.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Weather<wbr>Icon</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/exclude.html" class="tsd-kind-icon">Exclude</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/language.html" class="tsd-kind-icon">Language</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/units.html" class="tsd-kind-icon">Units</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/weathericon.html" class="tsd-kind-icon">Weather<wbr>Icon</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/openweathermap.html" class="tsd-kind-icon">Open<wbr>Weather<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/currentdatablock.html" class="tsd-kind-icon">Current<wbr>Data<wbr>Block</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/currentforecast.html" class="tsd-kind-icon">Current<wbr>Forecast</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/dailydatablock.html" class="tsd-kind-icon">Daily<wbr>Data<wbr>Block</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/darkskycurrentdatapoint.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Current<wbr>Data<wbr>Point</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/darkskycurrentforecast.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Current<wbr>Forecast</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/darkskydailydatablock.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Daily<wbr>Data<wbr>Block</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/darkskydailydatapoint.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Daily<wbr>Data<wbr>Point</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/darkskydatablock.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Data<wbr>Block</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/darkskydatapoint.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Data<wbr>Point</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/darkskydayforecast.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Day<wbr>Forecast</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/darkskyforecast.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Forecast</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/darkskyforecastrequest.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Forecast<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/darkskyhourforecast.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Hour<wbr>Forecast</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/darkskyhourlydatablock.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Hourly<wbr>Data<wbr>Block</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/darkskyhourlydatapoint.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Hourly<wbr>Data<wbr>Point</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/darkskyminutelydatablock.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Minutely<wbr>Data<wbr>Block</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/darkskyminutelydatapoint.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Minutely<wbr>Data<wbr>Point</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/darkskyweekforecast.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Week<wbr>Forecast</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/dayforecast.html" class="tsd-kind-icon">Day<wbr>Forecast</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/forecast.html" class="tsd-kind-icon">Forecast</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/forecastrequest.html" class="tsd-kind-icon">Forecast<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/fullforecast.html" class="tsd-kind-icon">Full<wbr>Forecast</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hourforecast.html" class="tsd-kind-icon">Hour<wbr>Forecast</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hourlydatablock.html" class="tsd-kind-icon">Hourly<wbr>Data<wbr>Block</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/minutelydatablock.html" class="tsd-kind-icon">Minutely<wbr>Data<wbr>Block</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/openweathermapclient.html" class="tsd-kind-icon">Open<wbr>Weather<wbr>Map<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/openweathermapoptions.html" class="tsd-kind-icon">Open<wbr>Weather<wbr>Map<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/precipitationdatapoint.html" class="tsd-kind-icon">Precipitation<wbr>Data<wbr>Point</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/requestparams.html" class="tsd-kind-icon">Request<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/temperatureblock.html" class="tsd-kind-icon">Temperature<wbr>Block</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/temperaturedayblock.html" class="tsd-kind-icon">Temperature<wbr>Day<wbr>Block</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/timemachinerequest.html" class="tsd-kind-icon">Time<wbr>Machine<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/weatherblock.html" class="tsd-kind-icon">Weather<wbr>Block</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/weekforecast.html" class="tsd-kind-icon">Week<wbr>Forecast</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#timemachinedate" class="tsd-kind-icon">Time<wbr>Machine<wbr>Date</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#buildopenweathermaprequest" class="tsd-kind-icon">build<wbr>Open<wbr>Weather<wbr>Map<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#darkskycompatclient" class="tsd-kind-icon">dark<wbr>Sky<wbr>Compat<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#mapresulttodarkskyforecast" class="tsd-kind-icon">map<wbr>Result<wbr>ToDark<wbr>Sky<wbr>Forecast</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#maptodarkskyforecast" class="tsd-kind-icon">map<wbr>ToDark<wbr>Sky<wbr>Forecast</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#openweathermapclient" class="tsd-kind-icon">open<wbr>Weather<wbr>Map<wbr>Client</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
