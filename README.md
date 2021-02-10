@@ -2,9 +2,9 @@
 
 A Nodejs and Browser client for the new [OpenWeatherMap "One Call" API](https://openweathermap.org/api/one-call-api), written in TypeScript.
 
-![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/worldturtlemedia/openweathermap-onecall/CI/master?label=release) ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/worldturtlemedia/openweathermap-onecall/CI/master?label=next) [![codecov](https://codecov.io/gh/worldturtlemedia/openweathermap-onecall/branch/master/graph/badge.svg?token=GSXRH8UDT3)](https://codecov.io/gh/worldturtlemedia/openweathermap-onecall)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/worldturtlemedia/openweathermap-onecall/CI/master?label=release) ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/worldturtlemedia/openweathermap-onecall/CI/next?label=next) [![codecov](https://codecov.io/gh/worldturtlemedia/openweathermap-onecall/branch/master/graph/badge.svg?token=GSXRH8UDT3)](https://codecov.io/gh/worldturtlemedia/openweathermap-onecall)
 
-[![npm version](https://badge.fury.io/js/onecall-api.svg)](https://badge.fury.io/js/owm-onecall-api) ![GitHub](https://img.shields.io/github/license/worldturtlemedia/openweathermap-onecall.svg) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/owm-onecall-api.svg)
+[![npm version](https://badge.fury.io/js/owm-onecall-api.svg)](https://badge.fury.io/js/owm-onecall-api) ![GitHub](https://img.shields.io/github/license/worldturtlemedia/openweathermap-onecall.svg) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/owm-onecall-api.svg)
 
 ![GitHub commits since latest release (by SemVer)](https://img.shields.io/github/commits-since/worldturtlemedia/openweathermap-onecall/latest/master?sort=semver) [![dependencies Status](https://david-dm.org/worldturtlemedia/openweathermap-onecall/status.svg)](https://david-dm.org/worldturtlemedia/openweathermap-onecall) [![devDependencies Status](https://david-dm.org/worldturtlemedia/openweathermap-onecall/dev-status.svg)](https://david-dm.org/worldturtlemedia/openweathermap-onecall?type=dev)
 
