@@ -79,40 +79,27 @@ jobs:
         with:
           name: dist
           path: dist
-      # TODO: Move documentation to new job and publish to gh-pages
-      - name: Generate documentation
-        run: yarn docs
-      - name: Archive documentation
-        uses: actions/upload-artifact@v2
+
+  deploy:
+    needs: [lint, test, build]
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.repository_owner == 'worldturtlemedia' && (github.ref == 'refs/heads/master')
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Download built files
+        uses: actions/download-artifact@v2
         with:
-          name: documentation
-          path: docs
-  # deploy:
-  #   needs: [lint, test, build]
-  #   runs-on: ubuntu-latest
-  #   if: github.event_name == 'push' && github.repository_owner == 'worldturtlemedia' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/next')
-  #   steps:
-  #     - name: Checkout code
-  #       uses: actions/checkout@v2
-  #     - name: Restore cache
-  #       uses: actions/cache@v2
-  #       with:
-  #         path: |
-  #           node_modules
-  #           **/node_modules
-  #         key: ${{ runner.os }}-${{ hashFiles('./yarn.lock') }}
-  #     - name: Use Node 14
-  #       uses: actions/setup-node@v1
-  #       with:
-  #         node-version: 14.x
-  #     - name: Install dependencies
-  #       run: yarn --frozen-lockfile --non-interactive
-  #     - name: Run Semantic Release
-  #       uses: cycjimmy/semantic-release-action@v2
-  #       env:
-  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  #         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-  #     - name: On release
-  #       if: steps.semantic.outputs.new_release_published == 'true'
-  #       run: |
-  #         echo Released verion: ${{ steps.semantic.outputs.new_release_version }} to ${{ steps.semantic.outputs.new_release_channel }}
+          name: dist
+          path: ./
+      - name: Run Semantic Release
+        uses: cycjimmy/semantic-release-action@v2
+        with:
+          branch: master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: On release
+        if: steps.semantic.outputs.new_release_published == 'true'
+        run: |
+          echo Released verion: ${{ steps.semantic.outputs.new_release_version }} to ${{ steps.semantic.outputs.new_release_channel }}
