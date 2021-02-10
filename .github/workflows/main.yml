@@ -92,14 +92,16 @@ jobs:
         with:
           name: dist
           path: ./
-      - name: Run Semantic Release
-        uses: cycjimmy/semantic-release-action@v2
-        with:
-          branch: master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - name: On release
-        if: steps.semantic.outputs.new_release_published == 'true'
-        run: |
-          echo Released verion: ${{ steps.semantic.outputs.new_release_version }} to ${{ steps.semantic.outputs.new_release_channel }}
+      - name: test
+        run: ls -lah dist/
+      # - name: Run Semantic Release
+      #   uses: cycjimmy/semantic-release-action@v2
+      #   with:
+      #     branch: master
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # - name: On release
+      #   if: steps.semantic.outputs.new_release_published == 'true'
+      #   run: |
+      #     echo Released verion: ${{ steps.semantic.outputs.new_release_version }} to ${{ steps.semantic.outputs.new_release_channel }}

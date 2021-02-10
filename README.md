@@ -1,4 +1,4 @@
-# OpenWeatherMap One Call - API Client
+# OpenWeatherMap One Call
 
 A Nodejs and Browser client for the new [OpenWeatherMap "One Call" API](https://openweathermap.org/api/one-call-api), written in TypeScript.
 
