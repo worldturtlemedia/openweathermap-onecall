@@ -103,6 +103,11 @@ export function mapToDarkSkyForecast(forecast: Forecast): DarkSkyForecast {
   }
 }
 
+/**
+ * Map an OpenWeatherMap Forecast promise to a DarkSky equivelent object.
+ *
+ * @param promise OpenWeatherMap forecast promise.
+ */
 export async function mapResultToDarkSkyForecast(promise: Promise<Forecast>) {
   const result = await promise
   return mapToDarkSkyForecast(result)
