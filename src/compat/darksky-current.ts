@@ -49,6 +49,11 @@ export interface DarkSkyCurrentDataPoint extends DarkSkyDataPoint {
    * Mapped from CurrentDataBlock.uvi
    */
   uvIndex: number
+
+  /**
+   * Average visibility measured in metres (m).
+   */
+  visibility: number
 }
 
 /**
@@ -71,5 +76,6 @@ export function mapCurrentToDarkSky(
     temperature: dataBlock.temp,
     apparentTemperature: dataBlock.feels_like,
     uvIndex: dataBlock.uvi,
+    visibility: dataBlock.visibility,
   }
 }

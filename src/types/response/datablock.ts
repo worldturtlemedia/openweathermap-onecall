@@ -15,6 +15,8 @@ export interface PrecipitationDataPoint {
  * @internal
  *
  * Base datablock interface
+ *
+ * TODO: WEATHER IS AN ARRAY
  */
 export interface DataBlock {
   /**
@@ -65,7 +67,7 @@ export interface DataBlock {
   /**
    * Average visibility measured in metres (m).
    */
-  visibility: number
+  visibility?: number
 
   /**
    * Wind speed.
@@ -89,7 +91,7 @@ export interface DataBlock {
   /**
    * Probability of precipitation.
    */
-  pop: number
+  pop?: number
 
   /**
    * Volume of rain for the last hour, measured in mm.
@@ -104,7 +106,7 @@ export interface DataBlock {
   /**
    * A block of user-facing weather information.
    */
-  weather: WeatherBlock
+  weather: WeatherBlock[]
 
   /**
    * Midday UV index.

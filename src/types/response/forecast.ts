@@ -2,6 +2,7 @@ import { CurrentDataBlock } from "./current"
 import { MinutelyDataBlock } from "./minutely"
 import { HourlyDataBlock } from "./hourly"
 import { DailyDataBlock } from "./daily"
+import { Alert } from "./alerts"
 
 /**
  * API response for OpenWeatherMap's one-call endpoint.
@@ -48,6 +49,11 @@ export interface Forecast {
    * A list of data blocks containing weather for the next 5 days.
    */
   daily?: DailyDataBlock[]
+
+  /**
+   * National weather alerts data from major national weather warning systems
+   */
+  alerts?: Alert[]
 }
 
 /**
@@ -75,6 +81,11 @@ export interface FullForecast extends Forecast {
    * A list of data blocks containing weather for the next 5 days.
    */
   daily: DailyDataBlock[]
+
+  /**
+   * National weather alerts data from major national weather warning systems.
+   */
+  alerts: Alert[]
 }
 
 /**

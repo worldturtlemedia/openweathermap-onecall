@@ -31,4 +31,11 @@ export interface HourlyDataBlock extends DataBlock {
    * Volume of snow for the last hour, measured in mm.
    */
   snow?: PrecipitationDataPoint
+
+  /**
+   * Probability of precipitation.
+   */
+  pop: number
+
+  visibility: number
 }

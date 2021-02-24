@@ -43,6 +43,11 @@ export interface DailyDataBlock extends DataBlock {
    * Volume of snow for the day, measured in mm.
    */
   snow?: number
+
+  /**
+   * Probability of precipitation.
+   */
+  pop: number
 }
 
 export interface TemperatureDayBlock {

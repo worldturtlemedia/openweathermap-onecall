@@ -97,6 +97,13 @@ export interface DarkSkyDailyDataPoint extends DarkSkyDataPoint {
    * Mapped from DailyDataBlock.uvi
    */
   uvIndex: number
+
+  /**
+   * Probability of precipitation.
+   *
+   * Mapped from DataBlock.pop
+   */
+  precipProbability: number
 }
 
 function mapDailyDataPoint(dataBlock: DailyDataBlock): DarkSkyDailyDataPoint {
@@ -119,6 +126,7 @@ function mapDailyDataPoint(dataBlock: DailyDataBlock): DarkSkyDailyDataPoint {
     apparentTemperatureMax,
     apparentTemperatureMin,
     uvIndex: dataBlock.uvi,
+    precipProbability: dataBlock.pop,
   }
 }
 
@@ -131,7 +139,7 @@ function mapDailyDataPoint(dataBlock: DailyDataBlock): DarkSkyDailyDataPoint {
 export function mapDailyToDarkSky(
   blocks: DailyDataBlock[] = []
 ): DarkSkyDailyDataBlock | undefined {
-  const { weather } = blocks[0] ?? {}
+  const weather = blocks[0]?.weather[0]
   if (!weather) return
 
   return {

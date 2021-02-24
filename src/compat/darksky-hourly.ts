@@ -42,6 +42,18 @@ export interface DarkSkyHourlyDataPoint extends DarkSkyDataPoint {
    * Mapped from HourlyDataBlock.feels_like
    */
   apparentTemperature: number
+
+  /**
+   * Probability of precipitation.
+   *
+   * Mapped from DataBlock.pop
+   */
+  precipProbability: number
+
+  /**
+   * Average visibility measured in metres (m).
+   */
+  visibility: number
 }
 
 function mapHourlyDataPoint(
@@ -53,6 +65,8 @@ function mapHourlyDataPoint(
     ...baseDataPoint,
     temperature: dataBlock.temp,
     apparentTemperature: dataBlock.feels_like,
+    precipProbability: dataBlock.pop,
+    visibility: dataBlock.visibility,
   }
 }
 
@@ -65,7 +79,7 @@ function mapHourlyDataPoint(
 export function mapHourlyToDarkSky(
   blocks: HourlyDataBlock[] = []
 ): DarkSkyHourlyDataBlock | undefined {
-  const { weather } = blocks[0] ?? {}
+  const weather = blocks[0]?.weather[0]
   if (!weather) return
 
   return {

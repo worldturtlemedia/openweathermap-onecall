@@ -6,6 +6,7 @@ import {
 import { DarkSkyHourlyDataBlock, mapHourlyToDarkSky } from "./darksky-hourly"
 import { mapDailyToDarkSky, DarkSkyDailyDataBlock } from "./darksky-daily"
 import { Forecast } from "../types"
+import { DarkSkyAlert, mapAlertsToDarkSky } from "./darksky-alert"
 
 /**
  * DarkSky Forecast response types.
@@ -56,6 +57,11 @@ export interface DarkSkyForecast {
    * A data block containing the weather conditions day-by-day for the next week.
    */
   daily?: DarkSkyDailyDataBlock
+
+  /**
+   * An alerts array, which, if present, contains any severe weather alerts pertinent to the requested location.
+   */
+  alerts?: DarkSkyAlert[]
 }
 
 /**
@@ -100,6 +106,7 @@ export function mapToDarkSkyForecast(forecast: Forecast): DarkSkyForecast {
     minutely: mapMinutelyToDarkSky(forecast.minutely),
     hourly: mapHourlyToDarkSky(forecast.hourly),
     daily: mapDailyToDarkSky(forecast.daily),
+    alerts: mapAlertsToDarkSky(forecast.alerts),
   }
 }
 

@@ -130,7 +130,7 @@ export interface DarkSkyDataPoint {
   /**
    * Average visibility measured in metres (m).
    */
-  visibility: number
+  visibility?: number
 
   /**
    * Wind speed.
@@ -162,7 +162,7 @@ export interface DarkSkyDataPoint {
    *
    * Mapped from DataBlock.pop
    */
-  precipProbability: number
+  precipProbability?: number
 
   /**
    * The type of precipitation.
@@ -228,11 +228,13 @@ function mapBaseDarkSkyPrecipitation(block: DataBlock) {
 export function mapBaseDarkSkyDataPoint(block: DataBlock): DarkSkyDataPoint {
   const precipitation = mapBaseDarkSkyPrecipitation(block)
 
+  const firstWeather = block.weather[0]
+
   return {
     time: block.dt,
-    summary: block.weather.description,
-    icon: mapToDarkSkyWeatherIcon(block.weather.icon),
-    originalIcon: block.weather.icon,
+    summary: firstWeather.description,
+    icon: mapToDarkSkyWeatherIcon(firstWeather.icon),
+    originalIcon: firstWeather.icon,
     pressure: block.pressure,
     humidity: block.humidity,
     dewPoint: block.dew_point,

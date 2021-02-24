@@ -33,6 +33,11 @@ export interface CurrentDataBlock extends DataBlock {
   feels_like: number
 
   /**
+   * Average visibility measured in metres (m).
+   */
+  visibility: number
+
+  /**
    * Midday UV index.
    */
   uvi: number
