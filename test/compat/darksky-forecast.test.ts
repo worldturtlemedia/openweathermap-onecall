@@ -1,4 +1,4 @@
-import { mapToDarkSkyForecast } from "../../src"
+import { mapAlertsToDarkSky, mapToDarkSkyForecast } from "../../src"
 import { mapMinutelyToDarkSky } from "../../src/compat/darksky-minutely"
 import { mapHourlyToDarkSky } from "../../src/compat/darksky-hourly"
 import { mapCurrentToDarkSky } from "../../src/compat/darksky-current"
@@ -75,5 +75,10 @@ describe("Darksky Compat", () => {
 
     const result = mapBaseDarkSkyDataPoint(data)
     expect(result.precipIntensity).toEqual(42)
+  })
+
+  it("Should handle an empty alerts object", () => {
+    expect(mapAlertsToDarkSky([])).toEqual([])
+    expect(mapAlertsToDarkSky()).toEqual([])
   })
 })
