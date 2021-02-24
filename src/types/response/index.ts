@@ -1,4 +1,5 @@
 export { WeatherIcon } from "./weathericon"
+export * from "./alerts"
 export * from "./current"
 export * from "./daily"
 export { PrecipitationDataPoint } from "./datablock"
