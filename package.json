@@ -19,7 +19,6 @@
   },
   "main": "dist/index.js",
   "module": "dist/openweathermap-onecall.esm.js",
-  "browser": "dist/openweathermap-onecall.umd.production.min.js",
   "typings": "dist/types/index.d.ts",
   "sideEffects": false,
   "files": [
@@ -32,7 +31,7 @@
     "start": "tsdx watch",
     "predocs": "rimraf docs",
     "docs": "typedoc --out docs --exclude '**/__mocks__/**' --excludePrivate --excludeInternal src/index.ts",
-    "build": "tsdx build --format umd,esm,cjs",
+    "build": "tsdx build --format esm,cjs",
     "test": "tsdx test",
     "test:watch": "tsdx test --watch",
     "test:coverage": "tsdx test --coverage",
