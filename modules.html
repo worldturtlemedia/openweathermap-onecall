@@ -80,9 +80,11 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface"><a href="interfaces/alert.html" class="tsd-kind-icon">Alert</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/currentdatablock.html" class="tsd-kind-icon">Current<wbr>Data<wbr>Block</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/currentforecast.html" class="tsd-kind-icon">Current<wbr>Forecast</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/dailydatablock.html" class="tsd-kind-icon">Daily<wbr>Data<wbr>Block</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/darkskyalert.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Alert</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/darkskycurrentdatapoint.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Current<wbr>Data<wbr>Point</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/darkskycurrentforecast.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Current<wbr>Forecast</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/darkskydailydatablock.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Daily<wbr>Data<wbr>Block</a></li>
@@ -127,6 +129,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="modules.html#buildopenweathermaprequest" class="tsd-kind-icon">build<wbr>Open<wbr>Weather<wbr>Map<wbr>Request</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#darkskycompatclient" class="tsd-kind-icon">dark<wbr>Sky<wbr>Compat<wbr>Client</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#mapalertstodarksky" class="tsd-kind-icon">map<wbr>Alerts<wbr>ToDark<wbr>Sky</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#mapresulttodarkskyforecast" class="tsd-kind-icon">map<wbr>Result<wbr>ToDark<wbr>Sky<wbr>Forecast</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#maptodarkskyforecast" class="tsd-kind-icon">map<wbr>ToDark<wbr>Sky<wbr>Forecast</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#openweathermapclient" class="tsd-kind-icon">open<wbr>Weather<wbr>Map<wbr>Client</a></li>
@@ -143,7 +146,7 @@
 					<div class="tsd-signature tsd-kind-icon">Time<wbr>Machine<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/worldturtlemedia/openweathermap-onecall/blob/7984843/src/types/request/request.ts#L8">types/request/request.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/worldturtlemedia/openweathermap-onecall/blob/a5be6d7/src/types/request/request.ts#L8">types/request/request.ts:8</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -165,7 +168,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/worldturtlemedia/openweathermap-onecall/blob/7984843/src/wrapper/builder.ts#L231">wrapper/builder.ts:231</a></li>
+									<li>Defined in <a href="https://github.com/worldturtlemedia/openweathermap-onecall/blob/a5be6d7/src/wrapper/builder.ts#L231">wrapper/builder.ts:231</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -221,7 +224,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/worldturtlemedia/openweathermap-onecall/blob/7984843/src/compat/darksky-client.ts#L21">compat/darksky-client.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/worldturtlemedia/openweathermap-onecall/blob/a5be6d7/src/compat/darksky-client.ts#L21">compat/darksky-client.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -301,6 +304,35 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="mapalertstodarksky" class="tsd-anchor"></a>
+					<h3>map<wbr>Alerts<wbr>ToDark<wbr>Sky</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">map<wbr>Alerts<wbr>ToDark<wbr>Sky<span class="tsd-signature-symbol">(</span>alerts<span class="tsd-signature-symbol">?: </span><a href="interfaces/alert.html" class="tsd-signature-type" data-tsd-kind="Interface">Alert</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/darkskyalert.html" class="tsd-signature-type" data-tsd-kind="Interface">DarkSkyAlert</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/worldturtlemedia/openweathermap-onecall/blob/a5be6d7/src/compat/darksky-alert.ts#L76">compat/darksky-alert.ts:76</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Map a given OpenWeatherMap object to the Dark Sky equivelent.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> alerts: <a href="interfaces/alert.html" class="tsd-signature-type" data-tsd-kind="Interface">Alert</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="interfaces/darkskyalert.html" class="tsd-signature-type" data-tsd-kind="Interface">DarkSkyAlert</a><span class="tsd-signature-symbol">[]</span></h4>
+							<p>DarkSky equivelent Alert data block object.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="mapresulttodarkskyforecast" class="tsd-anchor"></a>
 					<h3>map<wbr>Result<wbr>ToDark<wbr>Sky<wbr>Forecast</h3>
 					<ul class="tsd-signatures tsd-kind-function">
@@ -310,7 +342,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/worldturtlemedia/openweathermap-onecall/blob/7984843/src/compat/darksky-forecast.ts#L111">compat/darksky-forecast.ts:111</a></li>
+									<li>Defined in <a href="https://github.com/worldturtlemedia/openweathermap-onecall/blob/a5be6d7/src/compat/darksky-forecast.ts#L118">compat/darksky-forecast.ts:118</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -341,7 +373,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/worldturtlemedia/openweathermap-onecall/blob/7984843/src/compat/darksky-forecast.ts#L94">compat/darksky-forecast.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/worldturtlemedia/openweathermap-onecall/blob/a5be6d7/src/compat/darksky-forecast.ts#L100">compat/darksky-forecast.ts:100</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -372,7 +404,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/worldturtlemedia/openweathermap-onecall/blob/7984843/src/client.ts#L61">client.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/worldturtlemedia/openweathermap-onecall/blob/a5be6d7/src/client.ts#L61">client.ts:61</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -432,6 +464,9 @@
 						<a href="classes/openweathermap.html" class="tsd-kind-icon">Open<wbr>Weather<wbr>Map</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/alert.html" class="tsd-kind-icon">Alert</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/currentdatablock.html" class="tsd-kind-icon">Current<wbr>Data<wbr>Block</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -439,6 +474,9 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/dailydatablock.html" class="tsd-kind-icon">Daily<wbr>Data<wbr>Block</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/darkskyalert.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Alert</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/darkskycurrentdatapoint.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Current<wbr>Data<wbr>Point</a>
@@ -541,6 +579,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#darkskycompatclient" class="tsd-kind-icon">dark<wbr>Sky<wbr>Compat<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#mapalertstodarksky" class="tsd-kind-icon">map<wbr>Alerts<wbr>ToDark<wbr>Sky</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#mapresulttodarkskyforecast" class="tsd-kind-icon">map<wbr>Result<wbr>ToDark<wbr>Sky<wbr>Forecast</a>
