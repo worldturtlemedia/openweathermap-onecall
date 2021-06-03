@@ -1,3 +1,4 @@
+import { Condition } from "./condition"
 import { WeatherIcon } from "./weathericon"
 
 /**
@@ -9,7 +10,7 @@ export interface WeatherBlock {
    *
    * See {@link https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2 Weather Condition Codes} for more info.
    */
-  id: number
+  id: Condition
 
   /**
    * Group of weather parameters (Rain, Snow, Extreme etc.)
