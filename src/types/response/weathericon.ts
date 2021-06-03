@@ -8,7 +8,7 @@ export enum WeatherIcon {
   ClearSkyNight = "01n",
 
   FewClouds = "02d",
-  FewCloudsNight = "0n",
+  FewCloudsNight = "02n",
 
   ScatteredClouds = "03d",
   ScatteredCloudsNight = "03n",
