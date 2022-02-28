@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.4.0
       - name: Restore cache
         uses: actions/cache@v2
         with:
@@ -15,16 +15,16 @@ jobs:
             node_modules
             **/node_modules
           key: ${{ runner.os }}-${{ hashFiles('./yarn.lock') }}
-      - name: Use Node 14
-        uses: actions/setup-node@v2
+      - name: Use Node 16
+        uses: actions/setup-node@v3
         with:
-          node-version: 14.x
+          node-version: 16.x
       - name: Install dependencies
         run: yarn --frozen-lockfile --non-interactive
       - name: Generate docs
         run: yarn docs
       - name: Deploy documentation
-        uses: JamesIves/github-pages-deploy-action@4.1.3
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
           branch: gh-pages
           folder: docs
