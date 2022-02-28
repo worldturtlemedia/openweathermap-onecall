@@ -13,10 +13,10 @@ jobs:
             node_modules
             **/node_modules
           key: ${{ runner.os }}-${{ hashFiles('./yarn.lock') }}
-      - name: Use Node 14
+      - name: Use Node 16
         uses: actions/setup-node@v3
         with:
-          node-version: 14.x
+          node-version: 16.x
       - name: Install dependencies
         run: yarn --frozen-lockfile --non-interactive
       - name: Lint all files
@@ -34,10 +34,10 @@ jobs:
             node_modules
             **/node_modules
           key: ${{ runner.os }}-${{ hashFiles('./yarn.lock') }}
-      - name: Use Node 14
+      - name: Use Node 16
         uses: actions/setup-node@v3
         with:
-          node-version: 14.x
+          node-version: 16.x
       - name: Install dependencies
         run: yarn --frozen-lockfile --non-interactive
       - name: Run tests with coverage
@@ -66,10 +66,10 @@ jobs:
             node_modules
             **/node_modules
           key: ${{ runner.os }}-${{ hashFiles('./yarn.lock') }}
-      - name: Use Node 14
+      - name: Use Node 16
         uses: actions/setup-node@v3
         with:
-          node-version: 14.x
+          node-version: 16.x
       - name: Install dependencies
         run: yarn --frozen-lockfile --non-interactive
       - name: Build library
