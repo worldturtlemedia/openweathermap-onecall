@@ -29,13 +29,13 @@ describe("OpenWeatherMap class", () => {
   })
 
   it("Should construct a OpenWeatherMap instance with axios params", () => {
-    new OpenWeatherMap("foo", { requestConfig: { headers: "foo" } })
+    new OpenWeatherMap("foo", { requestConfig: { headers: { foo: "bar" } } })
       .forecast(42, 42)
       .then(jest.fn())
 
     expect(mockAxios.get).toBeCalledWith(
       expect.any(String),
-      expect.objectContaining({ headers: "foo" })
+      expect.objectContaining({ headers: { foo: "bar" } })
     )
   })
 
