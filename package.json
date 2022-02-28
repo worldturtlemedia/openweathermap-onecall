@@ -18,7 +18,7 @@
     "url": "https://github.com/worldturtlemedia/openweathermap-onecall"
   },
   "main": "dist/index.js",
-  "module": "dist/owm-onecall.esm.js",
+  "module": "owm-onecall.esm.js",
   "typings": "dist/types/index.d.ts",
   "sideEffects": false,
   "files": [
