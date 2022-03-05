@@ -1,4 +1,4 @@
-import { TimeMachineDate, ForecastRequest } from "types"
+import { TimeMachineDate, ForecastRequest } from "../types"
 
 /**
  * A DarkSky request object.

@@ -1,4 +1,4 @@
-import { Alert } from "types"
+import { Alert } from "../types"
 
 /**
  * Objects representing the severe weather warnings issued for the requested location
