@@ -43,11 +43,11 @@ There was not really an similar "one-call" experience, so it looks like [OpenWea
 ## Installation
 
 ```bash
-yarn add onecall-api
+yarn add owm-onecall-api
 
 # or
 
-npm install onecall-api
+npm install owm-onecall-api
 ```
 
 ## Getting started
