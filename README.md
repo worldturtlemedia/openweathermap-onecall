@@ -33,7 +33,7 @@ There was not really an similar "one-call" experience, so it looks like [OpenWea
 - Tree-shakeable! Keep those bundles small.
 - Tested
 - Generated library documentation
-- Easy integration into an existing codebase that uses [DarkSky](https://github.com/worldturtlemedia/darksky-api/edit/master/DARKSKY.md).
+- Easy integration into an existing codebase that uses [DarkSky](https://github.com/worldturtlemedia/openweathermap-onecall/blob/master/DARKSKY.md).
 
 ## TODO
 
@@ -64,7 +64,7 @@ There are a couple ways to use this library.
 
 ### DarkSky Compatibility
 
-For integrating this library with an existing codebase that used to use DarkSky, please see the [DarkSky - Compat](https://github.com/worldturtlemedia/darksky-api/edit/master/DARKSKY.md) document.
+For integrating this library with an existing codebase that used to use DarkSky, please see the [DarkSky - Compat](https://github.com/worldturtlemedia/openweathermap-onecall/blob/master/DARKSKY.md) document.
 
 ### TimeMachine request
 
@@ -153,7 +153,7 @@ You can build a request by using method chaining and a builder pattern.
 
 ```typescript
 // Using helper function
-import { buildOpenWeatherMapRequest } from "darksky-api"
+import { buildOpenWeatherMapRequest } from "owm-onecall-api"
 
 buildOpenWeatherMapRequest("api-key", 42, 24)
   .extendHourly()
