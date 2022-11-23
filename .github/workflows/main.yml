@@ -21,6 +21,8 @@ jobs:
         run: yarn --frozen-lockfile --non-interactive
       - name: Lint all files
         run: yarn lint
+      - name: Codeball AI Code Review
+        uses: sturdy-dev/codeball-action@v2.6.0
 
   test:
     runs-on: ubuntu-latest
