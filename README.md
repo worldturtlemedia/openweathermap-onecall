@@ -37,7 +37,6 @@ There was not really an similar "one-call" experience, so it looks like [OpenWea
 
 ## TODO
 
-- Configure UMD release
 - Add ability to pass in a CORS anywhere proxy
 
 ## Installation
