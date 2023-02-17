@@ -71,6 +71,9 @@ export const onecall: FullForecast = {
       dt: 1614099600,
       sunrise: 1614082222,
       sunset: 1614121595,
+      moonrise: 1646309880,
+      moonset: 1646352120,
+      moon_phase: 0.03,
       temp: {
         day: 1.36,
         min: -2.23,

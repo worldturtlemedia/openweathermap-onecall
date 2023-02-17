@@ -12,6 +12,29 @@ export interface DailyDataBlock extends DataBlock {
   sunset: number
 
   /**
+   * The time of when the moon rises for this day, Unix, UTC
+   */
+  moonrise: number
+
+  /**
+   * The time of when the moon sets for this day, Unix, UTC
+   */
+  moonset: number
+
+  /**
+   * Moon phase.
+   *
+   * - 0 and 1 are 'new moon'
+   * - 0.25 is 'first quarter moon'
+   * - 0.5 is 'full moon'
+   * - 0.75 is 'last quarter moon'.
+   *
+   * The periods in between are called 'waxing crescent', 'waxing gibous', 'waning gibous',
+   * and 'waning crescent', respectively.
+   */
+  moon_phase: number
+
+  /**
    * Forecasted temperature.
    *
    * Depending on the [[Units]] selected this value will change.

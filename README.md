@@ -12,7 +12,7 @@ An API wrapper for OWM One Call API, usable in node and the browser. It pairs be
 
 If there are any features you would like, please feel free to open up an issue.
 
-### Motivation
+## Motivation
 
 I am also the author of [DarkSky API Client](https://github.com/worldturtlemedia/darksky-api), and I was saddened when I heard that [DarkSky API](https://blog.darksky.net/) annouced it was being shut down after being acquired from Apple.
 
@@ -37,7 +37,6 @@ There was not really an similar "one-call" experience, so it looks like [OpenWea
 
 ## TODO
 
-- Configure UMD release
 - Add ability to pass in a CORS anywhere proxy
 
 ## Installation
@@ -54,7 +53,7 @@ npm install onecall-api
 
 You will need to obtain a API token from [OpenWeatherMap](https://openweathermap.org/price).
 
-The free tier does give you access to the "one-call" endpoint.
+The free tier does give you access to the "one-call" endpoint. A subscription is now required when using the OneCall API. If you receive a 401 when getting the forecast that is the reason. You must subscibe to their new pricing model.
 
 ## Usage
 
@@ -225,12 +224,27 @@ If you need the forecast for a specific date and time, you can use OpenWeathMaps
 new OpenWeatherMap("api-key").week(42, 24, { time: "May 5 2018" })
 ```
 
+## Demo
+
+A demo is available in the `demo/` folder, in order to run follow these steps:
+
+1. Get an API key from OWM
+1. Make sure you are subscribed to their pricing plan
+1. Run the following commands:
+
+```sh
+yarn build
+node demo --key <INSERT API KEY>
+```
+
+You can change the default latitude and longitude by passing `--lat` and `--lon`.
+
 ## License
 
 ```text
 MIT License
 
-Copyright (c) 2021 Jordon de Hoog
+Copyright (c) 2023 Jordon de Hoog
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

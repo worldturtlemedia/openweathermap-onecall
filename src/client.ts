@@ -16,7 +16,7 @@ import { badRequest } from "./util/errors"
  *
  * @internal
  */
-export const API_BASE = "https://api.openweathermap.org/data/2.5/onecall"
+export const API_BASE = "https://api.openweathermap.org/data/3.0/onecall"
 
 const API_PATH_TIME_MACHINE = "timemachine"
 
@@ -50,7 +50,7 @@ export interface OpenWeatherMapClient {
 }
 
 /**
- * Default implementation of ClientFactory for making authorized requests to the DarkSky API.
+ * Default implementation of ClientFactory for making authorized requests to the OpenWeatherMap API.
  *
  * Note: Get your token from {@link https://openweathermap.org/full-price#current OpenWeatherMap}.
  *
