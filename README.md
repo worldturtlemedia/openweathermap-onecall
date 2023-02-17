@@ -12,7 +12,7 @@ An API wrapper for OWM One Call API, usable in node and the browser. It pairs be
 
 If there are any features you would like, please feel free to open up an issue.
 
-### Motivation
+## Motivation
 
 I am also the author of [DarkSky API Client](https://github.com/worldturtlemedia/darksky-api), and I was saddened when I heard that [DarkSky API](https://blog.darksky.net/) annouced it was being shut down after being acquired from Apple.
 
@@ -53,7 +53,7 @@ npm install onecall-api
 
 You will need to obtain a API token from [OpenWeatherMap](https://openweathermap.org/price).
 
-The free tier does give you access to the "one-call" endpoint.
+The free tier does give you access to the "one-call" endpoint. A subscription is now required when using the OneCall API. If you receive a 401 when getting the forecast that is the reason. You must subscibe to their new pricing model.
 
 ## Usage
 
