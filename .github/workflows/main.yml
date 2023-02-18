@@ -106,7 +106,7 @@ jobs:
           name: dist
           path: ./dist
       - name: Run Semantic Release
-        uses: cycjimmy/semantic-release-action@v2
+        uses: cycjimmy/semantic-release-action@v3
         with:
           branch: master
         env:
