@@ -16,7 +16,7 @@ If there are any features you would like, please feel free to open up an issue.
 
 I am also the author of [DarkSky API Client](https://github.com/worldturtlemedia/darksky-api), and I was saddened when I heard that [DarkSky API](https://blog.darksky.net/) annouced it was being shut down after being acquired from Apple.
 
-There was not really an similar "one-call" experience, so it looks like [OpenWeatherMap](https://openweathermap.org/api/one-call-api) saw an opportunity and took it. For right now this library will **only** support the "one-call" API. There are plenty other libraries on NPM that cover the rest of the APIs.
+There was not really an similar "one-call" experience, so it looks like [OpenWeatherMap](https://openweathermap.org/api/one-call-3) saw an opportunity and took it. For right now this library will **only** support the "one-call" API. There are plenty other libraries on NPM that cover the rest of the APIs.
 
 **Again**: This will _only_ support the one-call API (for now).
 
@@ -57,7 +57,7 @@ The free tier does give you access to the "one-call" endpoint. A subscription is
 
 ## Usage
 
-Create an account on [OpenWeatherMap](https://openweathermap.org/api/one-call-api), then get your API token.
+Create an account on [OpenWeatherMap](https://openweathermap.org/api/one-call-3), then get your API token.
 
 There are a couple ways to use this library.
 
