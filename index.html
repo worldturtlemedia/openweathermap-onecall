@@ -1,278 +1,160 @@
-<!doctype html>
-<html class="default no-js">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>owm-onecall-api</title>
-	<meta name="description" content="Documentation for owm-onecall-api">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/main.css">
-	<script async src="assets/js/search.js" id="search-script"></script>
-</head>
-<body>
-<header>
-	<div class="tsd-page-toolbar">
-		<div class="container">
-			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
-					<div class="field">
-						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
-						<input id="tsd-search-field" type="text" />
-					</div>
-					<ul class="results">
-						<li class="state loading">Preparing search index...</li>
-						<li class="state failure">The search index is not available</li>
-					</ul>
-					<a href="index.html" class="title">owm-onecall-api</a>
-				</div>
-				<div class="table-cell" id="tsd-widgets">
-					<div id="tsd-filter">
-						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
-						<div class="tsd-filter-group">
-							<div class="tsd-select" id="tsd-filter-visibility">
-								<span class="tsd-select-label">All</span>
-								<ul class="tsd-select-list">
-									<li data-value="public">Public</li>
-									<li data-value="protected">Public/Protected</li>
-									<li data-value="private" class="selected">All</li>
-								</ul>
-							</div>
-							<input type="checkbox" id="tsd-filter-inherited" checked />
-							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-externals" checked />
-							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-						</div>
-					</div>
-					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="tsd-page-title">
-		<div class="container">
-			<h1>owm-onecall-api</h1>
-		</div>
-	</div>
-</header>
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>owm-onecall-api</title><meta name="description" content="Documentation for owm-onecall-api"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<div class="tsd-toolbar-contents container">
+<div class="table-cell" id="tsd-search" data-base=".">
+<div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
+<div class="field">
+<div id="tsd-toolbar-links"></div></div>
+<ul class="results">
+<li class="state loading">Preparing search index...</li>
+<li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">owm-onecall-api</a></div>
+<div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="7" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="11" width="14" height="2" fill="var(--color-text)"></rect></svg></a></div></div></header>
 <div class="container container-main">
-	<div class="row">
-		<div class="col-8 col-content">
-			<div class="tsd-panel tsd-typography">
-				<a href="#openweathermap-one-call" id="openweathermap-one-call" style="color: inherit; text-decoration: none;">
-					<h1>OpenWeatherMap One Call</h1>
-				</a>
-				<p>A Nodejs and Browser client for the new <a href="https://openweathermap.org/api/one-call-api">OpenWeatherMap &quot;One Call&quot; API</a>, written in TypeScript.</p>
-				<p><img src="https://img.shields.io/github/workflow/status/worldturtlemedia/openweathermap-onecall/CI/master?label=release" alt="GitHub Workflow Status (branch)"> <img src="https://img.shields.io/github/workflow/status/worldturtlemedia/openweathermap-onecall/CI/next?label=next" alt="GitHub Workflow Status (branch)"> <a href="https://codecov.io/gh/worldturtlemedia/openweathermap-onecall"><img src="https://codecov.io/gh/worldturtlemedia/openweathermap-onecall/branch/master/graph/badge.svg?token=GSXRH8UDT3" alt="codecov"></a></p>
-				<p><a href="https://badge.fury.io/js/owm-onecall-api"><img src="https://badge.fury.io/js/owm-onecall-api.svg" alt="npm version"></a> <img src="https://img.shields.io/github/license/worldturtlemedia/openweathermap-onecall.svg" alt="GitHub"> <img src="https://img.shields.io/bundlephobia/minzip/owm-onecall-api.svg" alt="npm bundle size"></p>
-				<p><img src="https://img.shields.io/github/commits-since/worldturtlemedia/openweathermap-onecall/latest/master?sort=semver" alt="GitHub commits since latest release (by SemVer)"> <a href="https://david-dm.org/worldturtlemedia/openweathermap-onecall"><img src="https://david-dm.org/worldturtlemedia/openweathermap-onecall/status.svg" alt="dependencies Status"></a> <a href="https://david-dm.org/worldturtlemedia/openweathermap-onecall?type=dev"><img src="https://david-dm.org/worldturtlemedia/openweathermap-onecall/dev-status.svg" alt="devDependencies Status"></a></p>
-				<p>An API wrapper for OWM One Call API, usable in node and the browser. It pairs best when used in a TypeScript project, as you will get all the types from the API response. This library makes interacting with the OpenWeatherMap &quot;One Call&quot; API a little bit more friendly. It offers promises, request customization, and best of all response types.</p>
-				<p>If there are any features you would like, please feel free to open up an issue.</p>
-				<a href="#motivation" id="motivation" style="color: inherit; text-decoration: none;">
-					<h3>Motivation</h3>
-				</a>
-				<p>I am also the author of <a href="https://github.com/worldturtlemedia/darksky-api">DarkSky API Client</a>, and I was saddened when I heard that <a href="https://blog.darksky.net/">DarkSky API</a> annouced it was being shut down after being acquired from Apple.</p>
-				<p>There was not really an similar &quot;one-call&quot; experience, so it looks like <a href="https://openweathermap.org/api/one-call-api">OpenWeatherMap</a> saw an opportunity and took it. For right now this library will <strong>only</strong> support the &quot;one-call&quot; API. There are plenty other libraries on NPM that cover the rest of the APIs.</p>
-				<p><strong>Again</strong>: This will <em>only</em> support the one-call API (for now).</p>
-				<a href="#notes" id="notes" style="color: inherit; text-decoration: none;">
-					<h3>Notes</h3>
-				</a>
-				<ul>
-					<li>I did my best to correctly add types for all of the supported endpoints. However if you notice an incorrect payload type, or some missing properties, please open up an issue, or submit a pull request.</li>
-					<li>For use in the browser, you will need a CORS proxy.</li>
-				</ul>
-				<a href="#features" id="features" style="color: inherit; text-decoration: none;">
-					<h2>Features</h2>
-				</a>
-				<ul>
-					<li>This library is powered by <a href="https://tsdx.io/">tsdx</a>, and outputs <del>UMD</del>, CommonJS, and an ESM bundle.</li>
-					<li>Supports OpenWeatherMap&#39;s new &quot;one-call&quot; API<ul>
-							<li>Similar to what DarkSky&#39;s API was.</li>
-						</ul>
-					</li>
-					<li>Tree-shakeable! Keep those bundles small.</li>
-					<li>Tested</li>
-					<li>Generated library documentation</li>
-					<li>Easy integration into an existing codebase that uses <a href="https://github.com/worldturtlemedia/darksky-api/edit/master/DARKSKY.md">DarkSky</a>.</li>
-				</ul>
-				<a href="#todo" id="todo" style="color: inherit; text-decoration: none;">
-					<h2>TODO</h2>
-				</a>
-				<ul>
-					<li>Configure UMD release</li>
-					<li>Add ability to pass in a CORS anywhere proxy</li>
-				</ul>
-				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
-					<h2>Installation</h2>
-				</a>
-				<pre><code class="language-bash"><span style="color: #000000">yarn add onecall-api</span>
+<div class="col-8 col-content">
+<div class="tsd-page-title">
+<h2>owm-onecall-api</h2></div>
+<div class="tsd-panel tsd-typography">
+<a href="#openweathermap-one-call" id="openweathermap-one-call" style="color: inherit; text-decoration: none;">
+  <h1>OpenWeatherMap One Call</h1>
+</a>
+<p>A Nodejs and Browser client for the new <a href="https://openweathermap.org/api/one-call-api">OpenWeatherMap &quot;One Call&quot; API</a>, written in TypeScript.</p>
+<p><img src="https://img.shields.io/github/actions/workflow/status/worldturtlemedia/openweathermap-onecall/main.yml?branch=master" alt="GitHub Workflow Status (branch)"> <img src="https://img.shields.io/github/actions/workflow/status/worldturtlemedia/openweathermap-onecall/main.yml?branch=next" alt="GitHub Workflow Status (branch)"> <a href="https://codecov.io/gh/worldturtlemedia/openweathermap-onecall"><img src="https://codecov.io/gh/worldturtlemedia/openweathermap-onecall/branch/master/graph/badge.svg?token=GSXRH8UDT3" alt="codecov"></a></p>
+<p><a href="https://badge.fury.io/js/owm-onecall-api"><img src="https://badge.fury.io/js/owm-onecall-api.svg" alt="npm version"></a> <img src="https://img.shields.io/github/license/worldturtlemedia/openweathermap-onecall.svg" alt="GitHub"> <img src="https://img.shields.io/bundlephobia/minzip/owm-onecall-api.svg" alt="npm bundle size"></p>
+<p><img src="https://img.shields.io/github/commits-since/worldturtlemedia/openweathermap-onecall/latest/master?sort=semver" alt="GitHub commits since latest release (by SemVer)"></p>
+<p>An API wrapper for OWM One Call API, usable in node and the browser. It pairs best when used in a TypeScript project, as you will get all the types from the API response. This library makes interacting with the OpenWeatherMap &quot;One Call&quot; API a little bit more friendly. It offers promises, request customization, and best of all response types.</p>
+<p>If there are any features you would like, please feel free to open up an issue.</p>
 
-<span style="color: #008000"># or</span>
+<a href="#motivation" id="motivation" style="color: inherit; text-decoration: none;">
+  <h2>Motivation</h2>
+</a>
+<p>I am also the author of <a href="https://github.com/worldturtlemedia/darksky-api">DarkSky API Client</a>, and I was saddened when I heard that <a href="https://blog.darksky.net/">DarkSky API</a> annouced it was being shut down after being acquired from Apple.</p>
+<p>There was not really an similar &quot;one-call&quot; experience, so it looks like <a href="https://openweathermap.org/api/one-call-3">OpenWeatherMap</a> saw an opportunity and took it. For right now this library will <strong>only</strong> support the &quot;one-call&quot; API. There are plenty other libraries on NPM that cover the rest of the APIs.</p>
+<p><strong>Again</strong>: This will <em>only</em> support the one-call API (for now).</p>
 
-<span style="color: #000000">npm install onecall-api</span>
+<a href="#notes" id="notes" style="color: inherit; text-decoration: none;">
+  <h3>Notes</h3>
+</a>
+<ul>
+<li>I did my best to correctly add types for all of the supported endpoints. However if you notice an incorrect payload type, or some missing properties, please open up an issue, or submit a pull request.</li>
+<li>For use in the browser, you will need a CORS proxy.</li>
+</ul>
+
+<a href="#features" id="features" style="color: inherit; text-decoration: none;">
+  <h2>Features</h2>
+</a>
+<ul>
+<li>This library is powered by <a href="https://tsdx.io/">tsdx</a>, and outputs <del>UMD</del>, CommonJS, and an ESM bundle.</li>
+<li>Supports OpenWeatherMap&#39;s new &quot;one-call&quot; API<ul>
+<li>Similar to what DarkSky&#39;s API was.</li>
+</ul>
+</li>
+<li>Tree-shakeable! Keep those bundles small.</li>
+<li>Tested</li>
+<li>Generated library documentation</li>
+<li>Easy integration into an existing codebase that uses <a href="https://github.com/worldturtlemedia/openweathermap-onecall/blob/master/DARKSKY.md">DarkSky</a>.</li>
+</ul>
+
+<a href="#todo" id="todo" style="color: inherit; text-decoration: none;">
+  <h2>TODO</h2>
+</a>
+<ul>
+<li>Add ability to pass in a CORS anywhere proxy</li>
+</ul>
+
+<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+  <h2>Installation</h2>
+</a>
+<pre><code class="language-bash"><span class="hl-0">yarn </span><span class="hl-1">add</span><span class="hl-0"> </span><span class="hl-1">owm-onecall-api</span><br/><br/><span class="hl-2"># or</span><br/><br/><span class="hl-0">npm </span><span class="hl-1">install</span><span class="hl-0"> </span><span class="hl-1">owm-onecall-api</span>
 </code></pre>
-				<a href="#getting-started" id="getting-started" style="color: inherit; text-decoration: none;">
-					<h2>Getting started</h2>
-				</a>
-				<p>You will need to obtain a API token from <a href="https://openweathermap.org/price">OpenWeatherMap</a>.</p>
-				<p>The free tier does give you access to the &quot;one-call&quot; endpoint.</p>
-				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
-					<h2>Usage</h2>
-				</a>
-				<p>Create an account on <a href="https://openweathermap.org/api/one-call-api">OpenWeatherMap</a>, then get your API token.</p>
-				<p>There are a couple ways to use this library.</p>
-				<a href="#darksky-compatibility" id="darksky-compatibility" style="color: inherit; text-decoration: none;">
-					<h3>DarkSky Compatibility</h3>
-				</a>
-				<p>For integrating this library with an existing codebase that used to use DarkSky, please see the <a href="https://github.com/worldturtlemedia/darksky-api/edit/master/DARKSKY.md">DarkSky - Compat</a> document.</p>
-				<a href="#timemachine-request" id="timemachine-request" style="color: inherit; text-decoration: none;">
-					<h3>TimeMachine request</h3>
-				</a>
-				<p>Any request can be made into a TimeMachine request by passing <code>{ time: &#39;some-timestamp&#39; }</code> into any function that accepts an optional <code>params</code> object.</p>
-				<p>The <code>time</code> property an be any of the following:</p>
-				<ul>
-					<li>Date object.</li>
-					<li>A valid formatted date-string.</li>
-					<li>UNIX timestamp.</li>
-				</ul>
-				<p>Either be a UNIX timestamp or a string formatted as follows:</p>
-				<pre><code class="language-typescript"><span style="color: #008000">// UNIX timestamp</span>
-<span style="color: #000000">{</span>
-<span style="color: #000000">  time: </span><span style="color: #098658">1558575452</span>
-<span style="color: #000000">}</span>
 
-<span style="color: #008000">// Date string</span>
-<span style="color: #008000">// [YYYY]-[MM]-[DD]T[HH]:[MM]:[SS][timezone].</span>
-<span style="color: #000000">{</span>
-<span style="color: #000000">  time: </span><span style="color: #A31515">&quot;2019-01-01T00:00:00+0400&quot;</span>
-<span style="color: #000000">}</span>
+<a href="#getting-started" id="getting-started" style="color: inherit; text-decoration: none;">
+  <h2>Getting started</h2>
+</a>
+<p>You will need to obtain a API token from <a href="https://openweathermap.org/price">OpenWeatherMap</a>.</p>
+<p>The free tier does give you access to the &quot;one-call&quot; endpoint. A subscription is now required when using the OneCall API. If you receive a 401 when getting the forecast that is the reason. You must subscibe to their new pricing model.</p>
+
+<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+  <h2>Usage</h2>
+</a>
+<p>Create an account on <a href="https://openweathermap.org/api/one-call-3">OpenWeatherMap</a>, then get your API token.</p>
+<p>There are a couple ways to use this library.</p>
+
+<a href="#darksky-compatibility" id="darksky-compatibility" style="color: inherit; text-decoration: none;">
+  <h3>DarkSky Compatibility</h3>
+</a>
+<p>For integrating this library with an existing codebase that used to use DarkSky, please see the <a href="https://github.com/worldturtlemedia/openweathermap-onecall/blob/master/DARKSKY.md">DarkSky - Compat</a> document.</p>
+
+<a href="#timemachine-request" id="timemachine-request" style="color: inherit; text-decoration: none;">
+  <h3>TimeMachine request</h3>
+</a>
+<p>Any request can be made into a TimeMachine request by passing <code>{ time: &#39;some-timestamp&#39; }</code> into any function that accepts an optional <code>params</code> object.</p>
+<p>The <code>time</code> property an be any of the following:</p>
+<ul>
+<li>Date object.</li>
+<li>A valid formatted date-string.</li>
+<li>UNIX timestamp.</li>
+</ul>
+<p>Either be a UNIX timestamp or a string formatted as follows:</p>
+<pre><code class="language-typescript"><span class="hl-2">// UNIX timestamp</span><br/><span class="hl-0">{</span><br/><span class="hl-0">  </span><span class="hl-3">time</span><span class="hl-0">: </span><span class="hl-4">1558575452</span><br/><span class="hl-0">}</span><br/><br/><span class="hl-2">// Date string</span><br/><span class="hl-2">// [YYYY]-[MM]-[DD]T[HH]:[MM]:[SS][timezone].</span><br/><span class="hl-0">{</span><br/><span class="hl-0">  </span><span class="hl-3">time</span><span class="hl-0">: </span><span class="hl-1">&quot;2019-01-01T00:00:00+0400&quot;</span><br/><span class="hl-0">}</span>
 </code></pre>
-				<p>The library will try it&#39;s best to parse the Date string you pass in, so you don&#39;t <em>need</em> to supply it in the above format. But for safety its probably best.</p>
-				<blockquote>
-					<p>Timezone should either be omitted (to refer to local time for the location being requested),
-						<code>Z</code> (referring to GMT time), or +[HH][mm] or -[HH][mm] for an offset from GMT
-					in hours and minutes.</p>
-				</blockquote>
-				<a href="#1-openweathermapclient-class" id="1-openweathermapclient-class" style="color: inherit; text-decoration: none;">
-					<h2>1. OpenWeatherMapClient class</h2>
-				</a>
-				<p>Get instance of the factory.</p>
-				<p>Use any of the OpenWeatherMapClient helper functions (see below).</p>
-				<pre><code class="language-typescript"><span style="color: #008000">// Optional Default options</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">options</span><span style="color: #000000">: </span><span style="color: #267F99">OpenWeatherMapOptions</span><span style="color: #000000"> = {</span>
-<span style="color: #000000">  </span><span style="color: #008000">// Optional</span>
-<span style="color: #000000">  </span><span style="color: #008000">// Anything set here can be overriden when making the request</span>
+<p>The library will try it&#39;s best to parse the Date string you pass in, so you don&#39;t <em>need</em> to supply it in the above format. But for safety its probably best.</p>
+<blockquote>
+<p>Timezone should either be omitted (to refer to local time for the location being requested),
+<code>Z</code> (referring to GMT time), or +[HH][mm] or -[HH][mm] for an offset from GMT
+in hours and minutes.</p>
+</blockquote>
 
-<span style="color: #000000">  </span><span style="color: #001080">units:</span><span style="color: #000000"> </span><span style="color: #001080">Units</span><span style="color: #000000">.</span><span style="color: #001080">Metric</span><span style="color: #000000">,</span>
-<span style="color: #000000">  </span><span style="color: #001080">lang:</span><span style="color: #000000"> </span><span style="color: #001080">Language</span><span style="color: #000000">.</span><span style="color: #0070C1">FRENCH</span><span style="color: #000000">,</span>
-<span style="color: #000000">}</span>
-
-<span style="color: #008000">// Create the api wrapper class</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">openWeatherMap</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">OpenWeatherMap</span><span style="color: #000000">(</span><span style="color: #0070C1">KEY</span><span style="color: #000000">, </span><span style="color: #001080">options</span><span style="color: #000000">)</span>
-
-<span style="color: #008000">// Use the wrapper</span>
-
-<span style="color: #008000">/**</span>
-<span style="color: #008000"> * Will get the weekly forecast using a helper function, it excludes all of the datablocks except</span>
-<span style="color: #008000"> * for the `daily` one.  If you need more than that you can use `DarkSky.forecast` and pass in</span>
-<span style="color: #008000"> * an Exclude array.</span>
-<span style="color: #008000"> */</span>
-<span style="color: #0000FF">async</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">getWeeklyForecast</span><span style="color: #000000">(</span>
-<span style="color: #000000">  </span><span style="color: #001080">lat</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000">,</span>
-<span style="color: #000000">  </span><span style="color: #001080">lon</span><span style="color: #000000">: </span><span style="color: #267F99">number</span>
-<span style="color: #000000">): </span><span style="color: #267F99">Promise</span><span style="color: #000000">&lt;</span><span style="color: #267F99">WeekForecast</span><span style="color: #000000">&gt; {</span>
-<span style="color: #000000">  </span><span style="color: #AF00DB">try</span><span style="color: #000000"> {</span>
-<span style="color: #000000">    </span><span style="color: #008000">// You can pass options here to override the options set above</span>
-<span style="color: #000000">    </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">result</span><span style="color: #000000">: </span><span style="color: #267F99">WeekForecast</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">openWeatherMap</span><span style="color: #000000">.</span><span style="color: #795E26">week</span><span style="color: #000000">(</span><span style="color: #001080">lat</span><span style="color: #000000">, </span><span style="color: #001080">lon</span><span style="color: #000000">, {</span>
-<span style="color: #000000">      </span><span style="color: #001080">lang:</span><span style="color: #000000"> </span><span style="color: #001080">Language</span><span style="color: #000000">.</span><span style="color: #0070C1">ENGLISH</span><span style="color: #000000">,</span>
-<span style="color: #000000">    })</span>
-<span style="color: #000000">    </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">`Got forecast for </span><span style="color: #0000FF">${</span><span style="color: #001080">result</span><span style="color: #000000FF">.</span><span style="color: #001080">lat</span><span style="color: #0000FF">}</span><span style="color: #A31515">-</span><span style="color: #0000FF">${</span><span style="color: #001080">result</span><span style="color: #000000FF">.</span><span style="color: #001080">lon</span><span style="color: #0000FF">}</span><span style="color: #A31515">`</span><span style="color: #000000">)</span>
-<span style="color: #000000">    </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #001080">result</span>
-<span style="color: #000000">  } </span><span style="color: #AF00DB">catch</span><span style="color: #000000"> (</span><span style="color: #001080">error</span><span style="color: #000000">) {</span>
-<span style="color: #000000">    </span><span style="color: #008000">// If OpenWeatherMap API doesn&#039;t return a &#039;daily&#039; data-block, then this function will throw</span>
-<span style="color: #000000">    </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;Unable to get the weekly forecast for the chosen location&quot;</span><span style="color: #000000">)</span>
-<span style="color: #000000">  }</span>
-<span style="color: #000000">}</span>
-
-<span style="color: #000000">;(</span><span style="color: #0000FF">async</span><span style="color: #000000"> () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
-<span style="color: #000000">  </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">forecast</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #795E26">getWeeklyForecast</span><span style="color: #000000">(</span><span style="color: #098658">42</span><span style="color: #000000">, </span><span style="color: #098658">24</span><span style="color: #000000">)</span>
-
-<span style="color: #000000">  </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">`Forecast for tomorrow: </span><span style="color: #0000FF">${</span><span style="color: #001080">forecast</span><span style="color: #000000FF">.</span><span style="color: #001080">daily</span><span style="color: #000000FF">.</span><span style="color: #001080">temp</span><span style="color: #000000FF">.</span><span style="color: #001080">max</span><span style="color: #0000FF">}</span><span style="color: #A31515">`</span><span style="color: #000000">)</span>
-<span style="color: #000000">})()</span>
+<a href="#1-openweathermapclient-class" id="1-openweathermapclient-class" style="color: inherit; text-decoration: none;">
+  <h2>1. OpenWeatherMapClient class</h2>
+</a>
+<p>Get instance of the factory.</p>
+<p>Use any of the OpenWeatherMapClient helper functions (see below).</p>
+<pre><code class="language-typescript"><span class="hl-2">// Optional Default options</span><br/><span class="hl-5">const</span><span class="hl-0"> </span><span class="hl-6">options</span><span class="hl-0">: </span><span class="hl-7">OpenWeatherMapOptions</span><span class="hl-0"> = {</span><br/><span class="hl-0">  </span><span class="hl-2">// Optional</span><br/><span class="hl-0">  </span><span class="hl-2">// Anything set here can be overriden when making the request</span><br/><br/><span class="hl-0">  </span><span class="hl-8">units:</span><span class="hl-0"> </span><span class="hl-8">Units</span><span class="hl-0">.</span><span class="hl-8">Metric</span><span class="hl-0">,</span><br/><span class="hl-0">  </span><span class="hl-8">lang:</span><span class="hl-0"> </span><span class="hl-8">Language</span><span class="hl-0">.</span><span class="hl-6">FRENCH</span><span class="hl-0">,</span><br/><span class="hl-0">}</span><br/><br/><span class="hl-2">// Create the api wrapper class</span><br/><span class="hl-5">const</span><span class="hl-0"> </span><span class="hl-6">openWeatherMap</span><span class="hl-0"> = </span><span class="hl-5">new</span><span class="hl-0"> </span><span class="hl-9">OpenWeatherMap</span><span class="hl-0">(</span><span class="hl-6">KEY</span><span class="hl-0">, </span><span class="hl-8">options</span><span class="hl-0">)</span><br/><br/><span class="hl-2">// Use the wrapper</span><br/><br/><span class="hl-2">/**</span><br/><span class="hl-2"> * Will get the weekly forecast using a helper function, it excludes all of the datablocks except</span><br/><span class="hl-2"> * for the `daily` one.  If you need more than that you can use `DarkSky.forecast` and pass in</span><br/><span class="hl-2"> * an Exclude array.</span><br/><span class="hl-2"> */</span><br/><span class="hl-5">async</span><span class="hl-0"> </span><span class="hl-5">function</span><span class="hl-0"> </span><span class="hl-9">getWeeklyForecast</span><span class="hl-0">(</span><br/><span class="hl-0">  </span><span class="hl-8">lat</span><span class="hl-0">: </span><span class="hl-7">number</span><span class="hl-0">,</span><br/><span class="hl-0">  </span><span class="hl-8">lon</span><span class="hl-0">: </span><span class="hl-7">number</span><br/><span class="hl-0">): </span><span class="hl-7">Promise</span><span class="hl-0">&lt;</span><span class="hl-7">WeekForecast</span><span class="hl-0">&gt; {</span><br/><span class="hl-0">  </span><span class="hl-10">try</span><span class="hl-0"> {</span><br/><span class="hl-0">    </span><span class="hl-2">// You can pass options here to override the options set above</span><br/><span class="hl-0">    </span><span class="hl-5">const</span><span class="hl-0"> </span><span class="hl-6">result</span><span class="hl-0">: </span><span class="hl-7">WeekForecast</span><span class="hl-0"> = </span><span class="hl-10">await</span><span class="hl-0"> </span><span class="hl-8">openWeatherMap</span><span class="hl-0">.</span><span class="hl-9">week</span><span class="hl-0">(</span><span class="hl-8">lat</span><span class="hl-0">, </span><span class="hl-8">lon</span><span class="hl-0">, {</span><br/><span class="hl-0">      </span><span class="hl-8">lang:</span><span class="hl-0"> </span><span class="hl-8">Language</span><span class="hl-0">.</span><span class="hl-6">ENGLISH</span><span class="hl-0">,</span><br/><span class="hl-0">    })</span><br/><span class="hl-0">    </span><span class="hl-8">console</span><span class="hl-0">.</span><span class="hl-9">log</span><span class="hl-0">(</span><span class="hl-1">`Got forecast for </span><span class="hl-5">${</span><span class="hl-8">result</span><span class="hl-11">.</span><span class="hl-8">lat</span><span class="hl-5">}</span><span class="hl-1">-</span><span class="hl-5">${</span><span class="hl-8">result</span><span class="hl-11">.</span><span class="hl-8">lon</span><span class="hl-5">}</span><span class="hl-1">`</span><span class="hl-0">)</span><br/><span class="hl-0">    </span><span class="hl-10">return</span><span class="hl-0"> </span><span class="hl-8">result</span><br/><span class="hl-0">  } </span><span class="hl-10">catch</span><span class="hl-0"> (</span><span class="hl-8">error</span><span class="hl-0">) {</span><br/><span class="hl-0">    </span><span class="hl-2">// If OpenWeatherMap API doesn&#39;t return a &#39;daily&#39; data-block, then this function will throw</span><br/><span class="hl-0">    </span><span class="hl-8">console</span><span class="hl-0">.</span><span class="hl-9">log</span><span class="hl-0">(</span><span class="hl-1">&quot;Unable to get the weekly forecast for the chosen location&quot;</span><span class="hl-0">)</span><br/><span class="hl-0">  }</span><br/><span class="hl-0">}</span><br/><br/><span class="hl-0">;(</span><span class="hl-5">async</span><span class="hl-0"> () </span><span class="hl-5">=&gt;</span><span class="hl-0"> {</span><br/><span class="hl-0">  </span><span class="hl-5">const</span><span class="hl-0"> </span><span class="hl-6">forecast</span><span class="hl-0"> = </span><span class="hl-10">await</span><span class="hl-0"> </span><span class="hl-9">getWeeklyForecast</span><span class="hl-0">(</span><span class="hl-4">42</span><span class="hl-0">, </span><span class="hl-4">24</span><span class="hl-0">)</span><br/><br/><span class="hl-0">  </span><span class="hl-8">console</span><span class="hl-0">.</span><span class="hl-9">log</span><span class="hl-0">(</span><span class="hl-1">`Forecast for tomorrow: </span><span class="hl-5">${</span><span class="hl-8">forecast</span><span class="hl-11">.</span><span class="hl-8">daily</span><span class="hl-11">.</span><span class="hl-8">temp</span><span class="hl-11">.</span><span class="hl-8">max</span><span class="hl-5">}</span><span class="hl-1">`</span><span class="hl-0">)</span><br/><span class="hl-0">})()</span>
 </code></pre>
-				<a href="#2-chaining" id="2-chaining" style="color: inherit; text-decoration: none;">
-					<h2>2. Chaining</h2>
-				</a>
-				<p>You can build a request by using method chaining and a builder pattern.</p>
-				<pre><code class="language-typescript"><span style="color: #008000">// Using helper function</span>
-<span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">buildOpenWeatherMapRequest</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;darksky-api&quot;</span>
 
-<span style="color: #795E26">buildOpenWeatherMapRequest</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;api-key&quot;</span><span style="color: #000000">, </span><span style="color: #098658">42</span><span style="color: #000000">, </span><span style="color: #098658">24</span><span style="color: #000000">)</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">extendHourly</span><span style="color: #000000">()</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">onlyHourly</span><span style="color: #000000">()</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">execute</span><span style="color: #000000">()</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">then</span><span style="color: #000000">(</span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #001080">log</span><span style="color: #000000">)</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">catch</span><span style="color: #000000">(</span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #001080">log</span><span style="color: #000000">)</span>
-
-<span style="color: #008000">// Using the DarkSky class</span>
-<span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">OpenWeatherMap</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;api-key&quot;</span><span style="color: #000000">)</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">builder</span><span style="color: #000000">(</span><span style="color: #098658">42</span><span style="color: #000000">, </span><span style="color: #098658">24</span><span style="color: #000000">)</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">time</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;May 05 2019&quot;</span><span style="color: #000000">) </span><span style="color: #008000">// Library will try it&#039;s best to parse this date string</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">units</span><span style="color: #000000">(</span><span style="color: #001080">Units</span><span style="color: #000000">.</span><span style="color: #0070C1">UK</span><span style="color: #000000">)</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">execute</span><span style="color: #000000">()</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">then</span><span style="color: #000000">(</span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #001080">log</span><span style="color: #000000">)</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">catch</span><span style="color: #000000">(</span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #001080">log</span><span style="color: #000000">)</span>
+<a href="#2-chaining" id="2-chaining" style="color: inherit; text-decoration: none;">
+  <h2>2. Chaining</h2>
+</a>
+<p>You can build a request by using method chaining and a builder pattern.</p>
+<pre><code class="language-typescript"><span class="hl-2">// Using helper function</span><br/><span class="hl-10">import</span><span class="hl-0"> { </span><span class="hl-8">buildOpenWeatherMapRequest</span><span class="hl-0"> } </span><span class="hl-10">from</span><span class="hl-0"> </span><span class="hl-1">&quot;owm-onecall-api&quot;</span><br/><br/><span class="hl-9">buildOpenWeatherMapRequest</span><span class="hl-0">(</span><span class="hl-1">&quot;api-key&quot;</span><span class="hl-0">, </span><span class="hl-4">42</span><span class="hl-0">, </span><span class="hl-4">24</span><span class="hl-0">)</span><br/><span class="hl-0">  .</span><span class="hl-9">extendHourly</span><span class="hl-0">()</span><br/><span class="hl-0">  .</span><span class="hl-9">onlyHourly</span><span class="hl-0">()</span><br/><span class="hl-0">  .</span><span class="hl-9">execute</span><span class="hl-0">()</span><br/><span class="hl-0">  .</span><span class="hl-9">then</span><span class="hl-0">(</span><span class="hl-8">console</span><span class="hl-0">.</span><span class="hl-8">log</span><span class="hl-0">)</span><br/><span class="hl-0">  .</span><span class="hl-9">catch</span><span class="hl-0">(</span><span class="hl-8">console</span><span class="hl-0">.</span><span class="hl-8">log</span><span class="hl-0">)</span><br/><br/><span class="hl-2">// Using the DarkSky class</span><br/><span class="hl-5">new</span><span class="hl-0"> </span><span class="hl-9">OpenWeatherMap</span><span class="hl-0">(</span><span class="hl-1">&quot;api-key&quot;</span><span class="hl-0">)</span><br/><span class="hl-0">  .</span><span class="hl-9">builder</span><span class="hl-0">(</span><span class="hl-4">42</span><span class="hl-0">, </span><span class="hl-4">24</span><span class="hl-0">)</span><br/><span class="hl-0">  .</span><span class="hl-9">time</span><span class="hl-0">(</span><span class="hl-1">&quot;May 05 2019&quot;</span><span class="hl-0">) </span><span class="hl-2">// Library will try it&#39;s best to parse this date string</span><br/><span class="hl-0">  .</span><span class="hl-9">units</span><span class="hl-0">(</span><span class="hl-8">Units</span><span class="hl-0">.</span><span class="hl-6">UK</span><span class="hl-0">)</span><br/><span class="hl-0">  .</span><span class="hl-9">execute</span><span class="hl-0">()</span><br/><span class="hl-0">  .</span><span class="hl-9">then</span><span class="hl-0">(</span><span class="hl-8">console</span><span class="hl-0">.</span><span class="hl-8">log</span><span class="hl-0">)</span><br/><span class="hl-0">  .</span><span class="hl-9">catch</span><span class="hl-0">(</span><span class="hl-8">console</span><span class="hl-0">.</span><span class="hl-8">log</span><span class="hl-0">)</span>
 </code></pre>
-				<a href="#3-manual-openweathermap-client" id="3-manual-openweathermap-client" style="color: inherit; text-decoration: none;">
-					<h2>3. Manual OpenWeatherMap client</h2>
-				</a>
-				<p>This library also exports a minimal OpenWeatherMap wrapper, where you can manually create the requests.</p>
-				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">openWeatherMapClient</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;owm-onecall-api&quot;</span>
 
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">targetDate</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Date</span><span style="color: #000000">(</span><span style="color: #098658">1558000000</span><span style="color: #000000"> * </span><span style="color: #098658">1000</span><span style="color: #000000">)</span>
-
-<span style="color: #795E26">openWeatherMapClient</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;api-key&quot;</span><span style="color: #000000">)</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">timeMachine</span><span style="color: #000000">({ </span><span style="color: #001080">lat:</span><span style="color: #000000"> </span><span style="color: #098658">42</span><span style="color: #000000">, </span><span style="color: #001080">lon:</span><span style="color: #000000"> </span><span style="color: #098658">24</span><span style="color: #000000">, </span><span style="color: #001080">time:</span><span style="color: #000000"> </span><span style="color: #001080">targetDate</span><span style="color: #000000"> }, { </span><span style="color: #001080">units:</span><span style="color: #000000"> </span><span style="color: #001080">Units</span><span style="color: #000000">.</span><span style="color: #001080">Metric</span><span style="color: #000000"> })</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">then</span><span style="color: #000000">(</span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #001080">log</span><span style="color: #000000">)</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">catch</span><span style="color: #000000">(</span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #001080">log</span><span style="color: #000000">)</span>
+<a href="#3-manual-openweathermap-client" id="3-manual-openweathermap-client" style="color: inherit; text-decoration: none;">
+  <h2>3. Manual OpenWeatherMap client</h2>
+</a>
+<p>This library also exports a minimal OpenWeatherMap wrapper, where you can manually create the requests.</p>
+<pre><code class="language-typescript"><span class="hl-10">import</span><span class="hl-0"> { </span><span class="hl-8">openWeatherMapClient</span><span class="hl-0"> } </span><span class="hl-10">from</span><span class="hl-0"> </span><span class="hl-1">&quot;owm-onecall-api&quot;</span><br/><br/><span class="hl-5">const</span><span class="hl-0"> </span><span class="hl-6">targetDate</span><span class="hl-0"> = </span><span class="hl-5">new</span><span class="hl-0"> </span><span class="hl-9">Date</span><span class="hl-0">(</span><span class="hl-4">1558000000</span><span class="hl-0"> * </span><span class="hl-4">1000</span><span class="hl-0">)</span><br/><br/><span class="hl-9">openWeatherMapClient</span><span class="hl-0">(</span><span class="hl-1">&quot;api-key&quot;</span><span class="hl-0">)</span><br/><span class="hl-0">  .</span><span class="hl-9">timeMachine</span><span class="hl-0">({ </span><span class="hl-8">lat:</span><span class="hl-0"> </span><span class="hl-4">42</span><span class="hl-0">, </span><span class="hl-8">lon:</span><span class="hl-0"> </span><span class="hl-4">24</span><span class="hl-0">, </span><span class="hl-8">time:</span><span class="hl-0"> </span><span class="hl-8">targetDate</span><span class="hl-0"> }, { </span><span class="hl-8">units:</span><span class="hl-0"> </span><span class="hl-8">Units</span><span class="hl-0">.</span><span class="hl-8">Metric</span><span class="hl-0"> })</span><br/><span class="hl-0">  .</span><span class="hl-9">then</span><span class="hl-0">(</span><span class="hl-8">console</span><span class="hl-0">.</span><span class="hl-8">log</span><span class="hl-0">)</span><br/><span class="hl-0">  .</span><span class="hl-9">catch</span><span class="hl-0">(</span><span class="hl-8">console</span><span class="hl-0">.</span><span class="hl-8">log</span><span class="hl-0">)</span>
 </code></pre>
-				<a href="#openweathermap-class-helper-methods" id="openweathermap-class-helper-methods" style="color: inherit; text-decoration: none;">
-					<h2>OpenWeatherMap class helper methods</h2>
-				</a>
-				<p>Optional settings when creating a new wrapper:</p>
-				<pre><code class="language-typescript"><span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #0000FF">interface</span><span style="color: #000000"> </span><span style="color: #267F99">OpenWeatherMapOptions</span><span style="color: #000000"> {</span>
-<span style="color: #000000">  </span><span style="color: #008000">/**</span>
-<span style="color: #008000">   * Return weather conditions in the requested units.</span>
-<span style="color: #008000">   */</span>
-<span style="color: #000000">  </span><span style="color: #001080">units</span><span style="color: #000000">?: </span><span style="color: #267F99">Units</span>
 
-<span style="color: #000000">  </span><span style="color: #008000">/**</span>
-<span style="color: #008000">   * Return summary properties in the desired language.</span>
-<span style="color: #008000">   *</span>
-<span style="color: #008000">   * </span><span style="color: #0000FF">@default</span><span style="color: #008000"> </span><span style="color: #001080">Language.ENGLISH</span>
-<span style="color: #008000">   */</span>
-<span style="color: #000000">  </span><span style="color: #001080">lang</span><span style="color: #000000">?: </span><span style="color: #267F99">Language</span>
-
-<span style="color: #000000">  </span><span style="color: #008000">/**</span>
-<span style="color: #008000">   * Exclude some number of data blocks from the API response.</span>
-<span style="color: #008000">   */</span>
-<span style="color: #000000">  </span><span style="color: #001080">exclude</span><span style="color: #000000">?: </span><span style="color: #267F99">Exclude</span><span style="color: #000000">[]</span>
-
-<span style="color: #000000">  </span><span style="color: #008000">/**</span>
-<span style="color: #008000">   * Optional config to change the way axios makes the request.</span>
-<span style="color: #008000">   */</span>
-<span style="color: #000000">  </span><span style="color: #001080">requestConfig</span><span style="color: #000000">?: </span><span style="color: #267F99">AxiosRequestConfig</span>
-<span style="color: #000000">}</span>
+<a href="#openweathermap-class-helper-methods" id="openweathermap-class-helper-methods" style="color: inherit; text-decoration: none;">
+  <h2>OpenWeatherMap class helper methods</h2>
+</a>
+<p>Optional settings when creating a new wrapper:</p>
+<pre><code class="language-typescript"><span class="hl-10">export</span><span class="hl-0"> </span><span class="hl-5">interface</span><span class="hl-0"> </span><span class="hl-7">OpenWeatherMapOptions</span><span class="hl-0"> {</span><br/><span class="hl-0">  </span><span class="hl-2">/**</span><br/><span class="hl-2">   * Return weather conditions in the requested units.</span><br/><span class="hl-2">   */</span><br/><span class="hl-0">  </span><span class="hl-8">units</span><span class="hl-0">?: </span><span class="hl-7">Units</span><br/><br/><span class="hl-0">  </span><span class="hl-2">/**</span><br/><span class="hl-2">   * Return summary properties in the desired language.</span><br/><span class="hl-2">   *</span><br/><span class="hl-2">   * </span><span class="hl-5">@default</span><span class="hl-2"> </span><span class="hl-8">Language.ENGLISH</span><br/><span class="hl-2">   */</span><br/><span class="hl-0">  </span><span class="hl-8">lang</span><span class="hl-0">?: </span><span class="hl-7">Language</span><br/><br/><span class="hl-0">  </span><span class="hl-2">/**</span><br/><span class="hl-2">   * Exclude some number of data blocks from the API response.</span><br/><span class="hl-2">   */</span><br/><span class="hl-0">  </span><span class="hl-8">exclude</span><span class="hl-0">?: </span><span class="hl-7">Exclude</span><span class="hl-0">[]</span><br/><br/><span class="hl-0">  </span><span class="hl-2">/**</span><br/><span class="hl-2">   * Optional config to change the way axios makes the request.</span><br/><span class="hl-2">   */</span><br/><span class="hl-0">  </span><span class="hl-8">requestConfig</span><span class="hl-0">?: </span><span class="hl-7">AxiosRequestConfig</span><br/><span class="hl-0">}</span>
 </code></pre>
-				<p>All helper methods require the location <code>lat: number, lon: number</code>, and can take an optional settings object.</p>
-				<p>If you need the forecast for a specific date and time, you can use OpenWeathMaps&#39;s TimeMachine functionality by passing a <code>time</code> property to each helper function, example:</p>
-				<pre><code class="language-typescript"><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">OpenWeatherMap</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;api-key&quot;</span><span style="color: #000000">).</span><span style="color: #795E26">week</span><span style="color: #000000">(</span><span style="color: #098658">42</span><span style="color: #000000">, </span><span style="color: #098658">24</span><span style="color: #000000">, { </span><span style="color: #001080">time:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;May 5 2018&quot;</span><span style="color: #000000"> })</span>
+<p>All helper methods require the location <code>lat: number, lon: number</code>, and can take an optional settings object.</p>
+<p>If you need the forecast for a specific date and time, you can use OpenWeathMaps&#39;s TimeMachine functionality by passing a <code>time</code> property to each helper function, example:</p>
+<pre><code class="language-typescript"><span class="hl-5">new</span><span class="hl-0"> </span><span class="hl-9">OpenWeatherMap</span><span class="hl-0">(</span><span class="hl-1">&quot;api-key&quot;</span><span class="hl-0">).</span><span class="hl-9">week</span><span class="hl-0">(</span><span class="hl-4">42</span><span class="hl-0">, </span><span class="hl-4">24</span><span class="hl-0">, { </span><span class="hl-8">time:</span><span class="hl-0"> </span><span class="hl-1">&quot;May 5 2018&quot;</span><span class="hl-0"> })</span>
 </code></pre>
-				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
-					<h2>License</h2>
-				</a>
-				<pre><code class="language-text">MIT License
 
-Copyright (c) 2021 Jordon de Hoog
+<a href="#demo" id="demo" style="color: inherit; text-decoration: none;">
+  <h2>Demo</h2>
+</a>
+<p>A demo is available in the <code>demo/</code> folder, in order to run follow these steps:</p>
+<ol>
+<li>Get an API key from OWM</li>
+<li>Make sure you are subscribed to their pricing plan</li>
+<li>Run the following commands:</li>
+</ol>
+<pre><code class="language-sh"><span class="hl-0">yarn </span><span class="hl-1">build</span><br/><span class="hl-0">node </span><span class="hl-1">demo</span><span class="hl-0"> </span><span class="hl-1">--key</span><span class="hl-0"> &lt;</span><span class="hl-1">INSERT</span><span class="hl-0"> </span><span class="hl-1">API</span><span class="hl-0"> </span><span class="hl-1">KE</span><span class="hl-0">Y&gt;</span>
+</code></pre>
+<p>You can change the default latitude and longitude by passing <code>--lat</code> and <code>--lon</code>.</p>
+
+<a href="#license" id="license" style="color: inherit; text-decoration: none;">
+  <h2>License</h2>
+</a>
+<pre><code class="language-text">MIT License
+
+Copyright (c) 2023 Jordon de Hoog
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the &quot;Software&quot;), to deal
@@ -292,191 +174,79 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 </code></pre>
-			</div>
-		</div>
-		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
-			<nav class="tsd-navigation primary">
-				<ul>
-					<li class=" ">
-						<a href="modules.html">Exports</a>
-					</li>
-				</ul>
-			</nav>
-			<nav class="tsd-navigation secondary menu-sticky">
-				<ul class="before-current">
-					<li class=" tsd-kind-enum">
-						<a href="enums/darkskyweathericon.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Weather<wbr>Icon</a>
-					</li>
-					<li class=" tsd-kind-enum">
-						<a href="enums/exclude.html" class="tsd-kind-icon">Exclude</a>
-					</li>
-					<li class=" tsd-kind-enum">
-						<a href="enums/language.html" class="tsd-kind-icon">Language</a>
-					</li>
-					<li class=" tsd-kind-enum">
-						<a href="enums/units.html" class="tsd-kind-icon">Units</a>
-					</li>
-					<li class=" tsd-kind-enum">
-						<a href="enums/weathericon.html" class="tsd-kind-icon">Weather<wbr>Icon</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/openweathermap.html" class="tsd-kind-icon">Open<wbr>Weather<wbr>Map</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/alert.html" class="tsd-kind-icon">Alert</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/currentdatablock.html" class="tsd-kind-icon">Current<wbr>Data<wbr>Block</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/currentforecast.html" class="tsd-kind-icon">Current<wbr>Forecast</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/dailydatablock.html" class="tsd-kind-icon">Daily<wbr>Data<wbr>Block</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/darkskyalert.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Alert</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/darkskycurrentdatapoint.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Current<wbr>Data<wbr>Point</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/darkskycurrentforecast.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Current<wbr>Forecast</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/darkskydailydatablock.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Daily<wbr>Data<wbr>Block</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/darkskydailydatapoint.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Daily<wbr>Data<wbr>Point</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/darkskydatablock.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Data<wbr>Block</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/darkskydatapoint.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Data<wbr>Point</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/darkskydayforecast.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Day<wbr>Forecast</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/darkskyforecast.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Forecast</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/darkskyforecastrequest.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Forecast<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/darkskyhourforecast.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Hour<wbr>Forecast</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/darkskyhourlydatablock.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Hourly<wbr>Data<wbr>Block</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/darkskyhourlydatapoint.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Hourly<wbr>Data<wbr>Point</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/darkskyminutelydatablock.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Minutely<wbr>Data<wbr>Block</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/darkskyminutelydatapoint.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Minutely<wbr>Data<wbr>Point</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/darkskyweekforecast.html" class="tsd-kind-icon">Dark<wbr>Sky<wbr>Week<wbr>Forecast</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/dayforecast.html" class="tsd-kind-icon">Day<wbr>Forecast</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/forecast.html" class="tsd-kind-icon">Forecast</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/forecastrequest.html" class="tsd-kind-icon">Forecast<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/fullforecast.html" class="tsd-kind-icon">Full<wbr>Forecast</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/hourforecast.html" class="tsd-kind-icon">Hour<wbr>Forecast</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/hourlydatablock.html" class="tsd-kind-icon">Hourly<wbr>Data<wbr>Block</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/minutelydatablock.html" class="tsd-kind-icon">Minutely<wbr>Data<wbr>Block</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/openweathermapclient.html" class="tsd-kind-icon">Open<wbr>Weather<wbr>Map<wbr>Client</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/openweathermapoptions.html" class="tsd-kind-icon">Open<wbr>Weather<wbr>Map<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/precipitationdatapoint.html" class="tsd-kind-icon">Precipitation<wbr>Data<wbr>Point</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/requestparams.html" class="tsd-kind-icon">Request<wbr>Params</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/temperatureblock.html" class="tsd-kind-icon">Temperature<wbr>Block</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/temperaturedayblock.html" class="tsd-kind-icon">Temperature<wbr>Day<wbr>Block</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/timemachinerequest.html" class="tsd-kind-icon">Time<wbr>Machine<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/weatherblock.html" class="tsd-kind-icon">Weather<wbr>Block</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/weekforecast.html" class="tsd-kind-icon">Week<wbr>Forecast</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#timemachinedate" class="tsd-kind-icon">Time<wbr>Machine<wbr>Date</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#buildopenweathermaprequest" class="tsd-kind-icon">build<wbr>Open<wbr>Weather<wbr>Map<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#darkskycompatclient" class="tsd-kind-icon">dark<wbr>Sky<wbr>Compat<wbr>Client</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#mapalertstodarksky" class="tsd-kind-icon">map<wbr>Alerts<wbr>ToDark<wbr>Sky</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#mapresulttodarkskyforecast" class="tsd-kind-icon">map<wbr>Result<wbr>ToDark<wbr>Sky<wbr>Forecast</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#maptodarkskyforecast" class="tsd-kind-icon">map<wbr>ToDark<wbr>Sky<wbr>Forecast</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#openweathermapclient" class="tsd-kind-icon">open<wbr>Weather<wbr>Map<wbr>Client</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-</div>
-<footer class="with-border-bottom">
-	<div class="container">
-		<h2>Legend</h2>
-		<div class="tsd-legend-group">
-			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
-			</ul>
-		</div>
-	</div>
-</footer>
+</div></div>
+<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+<div class="tsd-navigation settings">
+<details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg> Settings</h3></summary>
+<div class="tsd-accordion-details">
+<div class="tsd-filter-visibility">
+<h4 class="uppercase">Member Visibility</h4><form>
+<ul id="tsd-filter-options">
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></form></div>
+<div class="tsd-theme-toggle">
+<h4 class="uppercase">Theme</h4><select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
+<nav class="tsd-navigation primary">
+<details class="tsd-index-accordion" open><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg> Modules</h3></summary>
+<div class="tsd-accordion-details">
+<ul>
+<li class="current selected"><a href="modules.html">owm-<wbr/>onecall-<wbr/>api</a>
+<ul></ul></li></ul></div></details></nav>
+<nav class="tsd-navigation secondary menu-sticky">
+<ul>
+<li class="tsd-kind-enum"><a href="enums/Condition.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-enum)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-8-path"></rect><path d="M9.45 16V7.24H14.49V8.224H10.518V10.936H14.07V11.908H10.518V15.016H14.49V16H9.45Z" fill="var(--color-text)" id="icon-8-text"></path></svg>Condition</a></li>
+<li class="tsd-kind-enum"><a href="enums/DarkSkyWeatherIcon.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-8-path"></use><use href="#icon-8-text"></use></svg>Dark<wbr/>Sky<wbr/>Weather<wbr/>Icon</a></li>
+<li class="tsd-kind-enum"><a href="enums/Exclude.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-8-path"></use><use href="#icon-8-text"></use></svg>Exclude</a></li>
+<li class="tsd-kind-enum"><a href="enums/Language.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-8-path"></use><use href="#icon-8-text"></use></svg>Language</a></li>
+<li class="tsd-kind-enum"><a href="enums/Units.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-8-path"></use><use href="#icon-8-text"></use></svg>Units</a></li>
+<li class="tsd-kind-enum"><a href="enums/WeatherIcon.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-8-path"></use><use href="#icon-8-text"></use></svg>Weather<wbr/>Icon</a></li>
+<li class="tsd-kind-class"><a href="classes/OpenWeatherMap.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-class)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-128-path"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)" id="icon-128-text"></path></svg>Open<wbr/>Weather<wbr/>Map</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/Alert.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-interface)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-256-path"></rect><path d="M9.51 16V15.016H11.298V8.224H9.51V7.24H14.19V8.224H12.402V15.016H14.19V16H9.51Z" fill="var(--color-text)" id="icon-256-text"></path></svg>Alert</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/CurrentDataBlock.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Current<wbr/>Data<wbr/>Block</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/CurrentForecast.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Current<wbr/>Forecast</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/DailyDataBlock.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Daily<wbr/>Data<wbr/>Block</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/DarkSkyAlert.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Dark<wbr/>Sky<wbr/>Alert</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/DarkSkyCurrentDataPoint.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Dark<wbr/>Sky<wbr/>Current<wbr/>Data<wbr/>Point</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/DarkSkyCurrentForecast.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Dark<wbr/>Sky<wbr/>Current<wbr/>Forecast</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/DarkSkyDailyDataBlock.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Dark<wbr/>Sky<wbr/>Daily<wbr/>Data<wbr/>Block</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/DarkSkyDailyDataPoint.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Dark<wbr/>Sky<wbr/>Daily<wbr/>Data<wbr/>Point</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/DarkSkyDataBlock.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Dark<wbr/>Sky<wbr/>Data<wbr/>Block</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/DarkSkyDataPoint.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Dark<wbr/>Sky<wbr/>Data<wbr/>Point</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/DarkSkyDayForecast.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Dark<wbr/>Sky<wbr/>Day<wbr/>Forecast</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/DarkSkyForecast.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Dark<wbr/>Sky<wbr/>Forecast</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/DarkSkyForecastRequest.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Dark<wbr/>Sky<wbr/>Forecast<wbr/>Request</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/DarkSkyHourForecast.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Dark<wbr/>Sky<wbr/>Hour<wbr/>Forecast</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/DarkSkyHourlyDataBlock.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Dark<wbr/>Sky<wbr/>Hourly<wbr/>Data<wbr/>Block</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/DarkSkyHourlyDataPoint.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Dark<wbr/>Sky<wbr/>Hourly<wbr/>Data<wbr/>Point</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/DarkSkyMinutelyDataBlock.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Dark<wbr/>Sky<wbr/>Minutely<wbr/>Data<wbr/>Block</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/DarkSkyMinutelyDataPoint.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Dark<wbr/>Sky<wbr/>Minutely<wbr/>Data<wbr/>Point</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/DarkSkyWeekForecast.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Dark<wbr/>Sky<wbr/>Week<wbr/>Forecast</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/DayForecast.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Day<wbr/>Forecast</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/Forecast.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Forecast</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/ForecastRequest.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Forecast<wbr/>Request</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/FullForecast.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Full<wbr/>Forecast</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/HourForecast.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Hour<wbr/>Forecast</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/HourlyDataBlock.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Hourly<wbr/>Data<wbr/>Block</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/MinutelyDataBlock.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Minutely<wbr/>Data<wbr/>Block</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/OpenWeatherMapClient.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Open<wbr/>Weather<wbr/>Map<wbr/>Client</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/OpenWeatherMapOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Open<wbr/>Weather<wbr/>Map<wbr/>Options</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/PrecipitationDataPoint.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Precipitation<wbr/>Data<wbr/>Point</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/RequestParams.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Request<wbr/>Params</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/TemperatureBlock.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Temperature<wbr/>Block</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/TemperatureDayBlock.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Temperature<wbr/>Day<wbr/>Block</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/TimeMachineRequest.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Time<wbr/>Machine<wbr/>Request</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/WeatherBlock.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Weather<wbr/>Block</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/WeekForecast.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Week<wbr/>Forecast</a></li>
+<li class="tsd-kind-type-alias"><a href="types/TimeMachineDate.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-4194304-path"></rect><path d="M11.31 16V8.224H8.91V7.24H14.79V8.224H12.39V16H11.31Z" fill="var(--color-text)" id="icon-4194304-text"></path></svg>Time<wbr/>Machine<wbr/>Date</a></li>
+<li class="tsd-kind-function"><a href="functions/buildOpenWeatherMapRequest.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-function)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-64-path"></rect><path d="M9.39 16V7.24H14.55V8.224H10.446V11.128H14.238V12.112H10.47V16H9.39Z" fill="var(--color-text)" id="icon-64-text"></path></svg>build<wbr/>Open<wbr/>Weather<wbr/>Map<wbr/>Request</a></li>
+<li class="tsd-kind-function"><a href="functions/darkSkyCompatClient.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>dark<wbr/>Sky<wbr/>Compat<wbr/>Client</a></li>
+<li class="tsd-kind-function"><a href="functions/mapAlertsToDarkSky.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>map<wbr/>Alerts<wbr/>To<wbr/>Dark<wbr/>Sky</a></li>
+<li class="tsd-kind-function"><a href="functions/mapResultToDarkSkyForecast.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>map<wbr/>Result<wbr/>To<wbr/>Dark<wbr/>Sky<wbr/>Forecast</a></li>
+<li class="tsd-kind-function"><a href="functions/mapToDarkSkyForecast.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>map<wbr/>To<wbr/>Dark<wbr/>Sky<wbr/>Forecast</a></li>
+<li class="tsd-kind-function"><a href="functions/openWeatherMapClient-1.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>open<wbr/>Weather<wbr/>Map<wbr/>Client</a></li></ul></nav></div></div>
 <div class="container tsd-generator">
-	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
-</div>
-<div class="overlay"></div>
-<script src="assets/js/main.js"></script>
-</body>
-</html>
+<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
+<div class="overlay"></div><script src="assets/main.js"></script></body></html>
