@@ -47,7 +47,7 @@
     "commitizen": "4.3.0",
     "cz-conventional-changelog": "3.3.0",
     "husky": "8.0.3",
-    "jest-mock-axios": "4.7.2",
+    "jest-mock-axios": "4.7.3",
     "rimraf": "5.0.1",
     "tsdx": "0.14.1",
     "tslib": "2.6.2",
