@@ -24,7 +24,7 @@ jobs:
       - name: Generate docs
         run: yarn docs
       - name: Deploy documentation
-        uses: JamesIves/github-pages-deploy-action@v4.5.0
+        uses: JamesIves/github-pages-deploy-action@v4.6.1
         with:
           branch: gh-pages
           folder: docs
