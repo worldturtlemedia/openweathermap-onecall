@@ -48,7 +48,7 @@ jobs:
           directory: ./coverage
           fail_ci_if_error: true
       - name: Archive coverage results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: coverage
           path: coverage
@@ -75,7 +75,7 @@ jobs:
       - name: Build library
         run: yarn build
       - name: Archive build files
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: dist
           path: dist
@@ -101,7 +101,7 @@ jobs:
       - name: Install dependencies
         run: yarn --frozen-lockfile --non-interactive
       - name: Download built files
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: dist
           path: ./dist
