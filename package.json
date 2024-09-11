@@ -46,7 +46,7 @@
   "devDependencies": {
     "commitizen": "4.3.0",
     "cz-conventional-changelog": "3.3.0",
-    "husky": "8.0.3",
+    "husky": "9.1.6",
     "jest-mock-axios": "4.7.3",
     "rimraf": "5.0.5",
     "tsdx": "0.14.1",
